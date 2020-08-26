@@ -39,6 +39,9 @@
   @include respond-below(md) {
     flex: 1.4;
   }
+  @include respond-below(sm) {
+    display: none;
+  }
   .btn__wrapper {
     width: 100%;
     display: flex;
@@ -148,6 +151,13 @@
     }
   }
 }
+.header-item__nav {
+  @include respond-below(sm) {
+    display: none;
+  }
+}
 .header-item__mobile {
-  display: none;
+  @include respond-above(sm) {
+    display: none;
+  }
 }

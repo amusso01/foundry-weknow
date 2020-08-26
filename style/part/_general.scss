@@ -214,3 +214,11 @@ h3,
   background-color: #2d95ef;
   color: #fff !important;
 }
+
+// section
+.section {
+  margin-bottom: 100px;
+  @include respond-below(md) {
+    margin-bottom: 50px;
+  }
+}
