@@ -4,10 +4,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 15px;
+  padding: 5px 15px;
   > p {
     color: $color__bright;
     font-size: 14px;
+    @include respond-below(sm) {
+      font-size: 12px;
+    }
     a {
       color: $color__bright;
       font-size: 14px;
@@ -128,6 +131,7 @@
     @include respond-below(md) {
       min-width: 760px;
       left: -70%;
+      text-align: center;
     }
     &.active {
       opacity: 1;
@@ -157,7 +161,41 @@
   }
 }
 .header-item__mobile {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
   @include respond-above(sm) {
     display: none;
+  }
+  .book-menu-mobile {
+    position: absolute;
+    z-index: 10;
+    background-color: $color__bright;
+    width: 100vw;
+    height: 100vh;
+    top: 45px;
+    left: -80%;
+    padding: 20px 35px;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+    &__title {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    &__nav {
+      margin-bottom: 20px;
+      > li {
+        margin-bottom: 10px;
+        > a {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }
