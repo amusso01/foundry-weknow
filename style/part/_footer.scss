@@ -1,0 +1,121 @@
+/*cookies section*/
+.footer-cookies {
+  background-color: #04141c;
+  padding: 13px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer-cookies .container {
+  display: block;
+  max-width: 1100px;
+  margin: 0px auto;
+  width: 90%;
+}
+.footer-cookies p {
+  margin: 0px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  display: inline-block;
+  max-width: 70%;
+  font-weight: 300;
+  margin-top: 9px;
+}
+.footer-cookies a {
+  color: #fff;
+}
+.footer-cookies a:hover {
+  color: #2d95ef;
+}
+
+// FOOTER
+.site-footer {
+  min-height: 430px;
+  background-color: $color__light-grey;
+  padding: 40px 0px;
+}
+.footer__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 85%;
+  margin: auto;
+  margin-bottom: 70px;
+  @include respond-below(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.footer__nav {
+  &-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  &-item {
+    margin-bottom: 10px;
+    > a {
+      font-size: 14px;
+      color: $color__grey;
+      &:hover {
+        color: $color__main;
+        text-decoration: underline;
+        text-decoration-color: $color__grey;
+      }
+    }
+  }
+}
+
+.footer__item {
+  @include respond-below(sm) {
+    margin-bottom: 20px;
+  }
+  &-inner {
+    margin-bottom: 40px;
+    .footer__nav-text {
+      color: $color__grey;
+      font-size: 14px;
+    }
+    .btn__wrapper {
+      margin-top: 14px;
+      .footer__button {
+        background-color: transparent;
+        border-radius: 0px;
+        border: 1px solid $color__grey;
+        color: $color__grey;
+        font-size: 14px;
+        transition: 0.3s;
+        min-height: 45px;
+        &:hover {
+          color: $color__text;
+          border-color: $color__text;
+        }
+      }
+    }
+  }
+}
+.footer__copy {
+  text-align: center;
+  > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1065px) {
+  .footer-cookies p {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-cookies {
+    text-align: center;
+  }
+  .footer-cookies p {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .footer-cookies .btn-white {
+    float: none;
+  }
+}
