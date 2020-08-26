@@ -4,31 +4,31 @@
 
 @font-face {
   font-family: "LL Circular Pro Bold Web";
-  src: url("./../../fonts/bold/lineto-circular-pro-bold.eot");
-  src: url("./../../fonts/bold/lineto-circular-pro-bold.eot?#iefix")
+  src: url("./../fonts/bold/lineto-circular-pro-bold.eot");
+  src: url("./../fonts/bold/lineto-circular-pro-bold.eot?#iefix")
       format("embedded-opentype"),
-    url("./../../fonts/bold/lineto-circular-pro-bold.woff2") format("woff2"),
-    url("./../../fonts/bold/lineto-circular-pro-bold.woff") format("woff");
+    url("./../fonts/bold/lineto-circular-pro-bold.woff2") format("woff2"),
+    url("./../fonts/bold/lineto-circular-pro-bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "LL Circular Pro Book Web";
-  src: url("./../../fonts/book/lineto-circular-pro-book.eot");
-  src: url("./../../fonts/book/lineto-circular-pro-book.eot?#iefix")
+  src: url("./../fonts/book/lineto-circular-pro-book.eot");
+  src: url("./../fonts/book/lineto-circular-pro-book.eot?#iefix")
       format("embedded-opentype"),
-    url("./../../fonts/book/lineto-circular-pro-book.woff2") format("woff2"),
-    url("./../../fonts/book/lineto-circular-pro-book.woff") format("woff");
+    url("./../fonts/book/lineto-circular-pro-book.woff2") format("woff2"),
+    url("./../fonts/book/lineto-circular-pro-book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "LL Circular Pro Medium Web";
-  src: url("./../../fonts/medium/lineto-circular-pro-medium.eot");
-  src: url("./../../fonts/medium/lineto-circular-pro-medium.eot?#iefix")
+  src: url("./../fonts/medium/lineto-circular-pro-medium.eot");
+  src: url("./../fonts/medium/lineto-circular-pro-medium.eot?#iefix")
       format("embedded-opentype"),
-    url("./../../fonts/medium/lineto-circular-pro-medium.woff2") format("woff2"),
-    url("./../../fonts/medium/lineto-circular-pro-medium.woff") format("woff");
+    url("./../fonts/medium/lineto-circular-pro-medium.woff2") format("woff2"),
+    url("./../fonts/medium/lineto-circular-pro-medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -170,9 +170,14 @@ h3,
   width: 90%;
   margin: auto;
 }
+
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.noscroll {
+  overflow: hidden;
 }
 
 // button
