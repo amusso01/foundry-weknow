@@ -830,6 +830,7 @@ h3,
 @media (max-width: 991px) {
   .hero__inner > h1 {
     margin-bottom: 10px;
+    font-size: 37px;
   }
 }
 
@@ -848,6 +849,9 @@ h3,
 }
 
 @media (max-width: 767px) {
+  .hero__banner {
+    padding: 5px 15px;
+  }
   .hero__banner > p {
     font-size: 14px;
   }
@@ -855,6 +859,26 @@ h3,
 
 .hero__banner span {
   font-weight: bold;
+}
+
+.hero__image {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .hero__image {
+    display: block;
+  }
+}
+
+.hero__image-mobile {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .hero__image-mobile {
+    display: none;
+  }
 }
 
 /*cookies section*/
