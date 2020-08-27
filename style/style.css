@@ -929,6 +929,16 @@ h3,
   }
 }
 
+.hero__inner .btn {
+  padding: 0px 50px;
+}
+
+@media (max-width: 991px) {
+  .hero__inner .btn {
+    padding: 0px 20px;
+  }
+}
+
 .hero__banner {
   min-height: 60px;
   -webkit-box-pack: center;
@@ -941,6 +951,8 @@ h3,
       -ms-flex-align: center;
           align-items: center;
   padding: 0px 15px;
+  z-index: 5;
+  position: relative;
 }
 
 @media (max-width: 767px) {
