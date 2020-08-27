@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- prettier-ignore -->
+    <meta name="description" content="Your Friend In The City on We Know London" />
     <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" />
-    <link rel="stylesheet" href="style/colombia.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
-    <title>We Know</title>
+    <title>We Know London | Your Friend In The City</title>
   </head>
   <body>
     <!-- Banner -->
@@ -28,13 +32,11 @@
         <div class="header-item header-item__mobile">
           <ul class="user-interaction">
             <li class="nav-item">
-              GBP(£)
-              <span>
-                <!-- prettier-ignore -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="12.728" height="6.364" viewBox="0 0 12.728 6.364">
-                <path id="Path_782" data-name="Path 782" d="M803.324,49.98l-6.364,6.364L790.6,49.98Z" transform="translate(-790.596 -49.98)" fill="#04141c"/>
-              </svg>
-              </span>
+              <select name="currency" id="currency">
+                <option value="GBP">GBP(£)</option>
+                <option value="USD">USD($)</option>
+                <option value="EUR">EUR(€)</option>
+              </select>
             </li>
             <li class="nav-item">
               <!-- prettier-ignore -->
@@ -181,13 +183,11 @@
         <div class="header-item header-item__user">
           <ul class="user-interaction">
             <li class="nav-item">
-              GBP(£)
-              <span>
-                <!-- prettier-ignore -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="12.728" height="6.364" viewBox="0 0 12.728 6.364">
-                <path id="Path_782" data-name="Path 782" d="M803.324,49.98l-6.364,6.364L790.6,49.98Z" transform="translate(-790.596 -49.98)" fill="#04141c"/>
-              </svg>
-              </span>
+              <select name="currency" id="currency">
+                <option value="GBP">GBP(£)</option>
+                <option value="USD">USD($)</option>
+                <option value="EUR">EUR(€)</option>
+              </select>
             </li>
             <li class="nav-item">
               <!-- prettier-ignore -->
@@ -218,7 +218,7 @@
     <!-- Hero -->
     <section class="hero">
       <img
-        src="./images/hero.png"
+        src="./images/hero.jpg"
         alt="electric vehicle"
         class="hero__image img-fluid"
       />
@@ -295,16 +295,16 @@
             <h3>Heathrow E-shuttle</h3>
             <div class="site-card__features">
               <p>
-                – Fully Electric, COVID Compliant transport
+                – Electric shuttle service to local hotels
               </p>
             </div>
             <div class="site-card__price">
               <p>
-                Enter location details for a quick quoteransport
+                £9.99 - £14.99
               </p>
             </div>
             <div class="site-card__cta">
-              <a href="">book a ride</a>
+              <a href="">Book a ride</a>
             </div>
           </div>
         </div>
@@ -312,7 +312,7 @@
 
         <div class="travel-service__card site-card">
           <div class="site-card__image">
-            <img src="./images/car.png" alt="car transfer" />
+            <img src="./images/train.jpg" alt="Heathrow Express" />
             <!-- prettier-ignore -->
             <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
                 <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
@@ -321,19 +321,19 @@
               </svg>
           </div>
           <div class="site-card__body">
-            <h3>Car Transfer</h3>
+            <h3>Heathrow Express</h3>
             <div class="site-card__features">
               <p>
-                – Fully Electric, COVID Compliant transport
+                – Heathrow to Paddington in 15 minutes
               </p>
             </div>
             <div class="site-card__price">
               <p>
-                Enter location details for a quick quoteransport
+                £22.00 - £55.00
               </p>
             </div>
             <div class="site-card__cta">
-              <a href="">book a ride</a>
+              <a href="">Buy tickets</a>
             </div>
           </div>
         </div>
@@ -341,7 +341,7 @@
 
         <div class="travel-service__card site-card">
           <div class="site-card__image">
-            <img src="./images/car.png" alt="car transfer" />
+            <img src="./images/nationalExpress.jpg" alt="National Express" />
             <!-- prettier-ignore -->
             <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
                 <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
@@ -350,19 +350,19 @@
               </svg>
           </div>
           <div class="site-card__body">
-            <h3>Car Transfer</h3>
+            <h3>National Express</h3>
             <div class="site-card__features">
               <p>
-                – Fully Electric, COVID Compliant transport
+                – Coach from Heathrow to Gatwick
               </p>
             </div>
             <div class="site-card__price">
               <p>
-                Enter location details for a quick quoteransport
+                £25.00
               </p>
             </div>
             <div class="site-card__cta">
-              <a href="">book a ride</a>
+              <a href="">Buy tickets</a>
             </div>
           </div>
         </div>
@@ -370,7 +370,7 @@
       </div>
     </section>
 
-    <!-- Card bundles section -->
+    <!-- Card BUNDLES section -->
 
     <section class="travel-service content-block section">
       <h2>Great savings across our most popular bundles</h2>
@@ -383,8 +383,42 @@
             <img
               class="img-fluid"
               src="./images/train-mobile.png"
-              alt="car
-            transfer"
+              alt="Heathrow Express"
+            />
+            <img
+              class="img-fluid"
+              src="./images/THREE.CO.png"
+              alt="Three Mobile"
+            />
+            <!-- prettier-ignore -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
+              <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
+                <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#fff" stroke-width="2"/>
+              </g>
+            </svg>
+            <div class="site-card__collect">
+              <a href="#">Click and Collect</a>
+            </div>
+          </div>
+          <div class="site-card__body">
+            <h3>Heathrow Express Saver + Three Mobile All in 50 Bundle</h3>
+            <div class="site-card__price">
+              <p class="compare-price">
+                <span class="scored">£72.00 </span>£64.99
+              </p>
+            </div>
+            <div class="site-card__cta">
+              <a href="">Buy bundle</a>
+            </div>
+          </div>
+        </div>
+        <!-- .site-card  -->
+        <div class="travel-service__card site-card">
+          <div class="site-card__image">
+            <img
+              class="img-fluid"
+              src="./images/oyster-small.png"
+              alt="Oyster"
             />
             <img class="img-fluid" src="./images/THREE.CO.png" alt="three" />
             <!-- prettier-ignore -->
@@ -398,106 +432,169 @@
             </div>
           </div>
           <div class="site-card__body">
-            <h3>Car Transfer</h3>
-            <div class="site-card__features">
-              <p>
-                – Fully Electric, COVID Compliant transport
-              </p>
-            </div>
+            <h3>Visitor Oyster card + Three Mobile All in 35 Bundle</h3>
             <div class="site-card__price">
-              <p>
-                Enter location details for a quick quoteransport
+              <p class="compare-price">
+                <span class="scored">£72.00 </span>£64.99
               </p>
             </div>
             <div class="site-card__cta">
-              <a href="">book a ride</a>
+              <a href="">Buy bundle</a>
             </div>
           </div>
         </div>
         <!-- .site-card  -->
-
         <div class="travel-service__card site-card">
           <div class="site-card__image">
-            <img src="./images/car.png" alt="car transfer" />
+            <img class="img-fluid" src="./images/BigBUS.png" alt="Big Bus" />
+            <img
+              class="img-fluid"
+              src="./images/london-pass.png"
+              alt="london pass"
+            />
             <!-- prettier-ignore -->
             <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
-                <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
-                  <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#fff" stroke-width="2"/>
-                </g>
-              </svg>
+              <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
+                <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#fff" stroke-width="2"/>
+              </g>
+            </svg>
+            <div class="site-card__collect">
+              <a href="#">Click and Collect</a>
+            </div>
           </div>
           <div class="site-card__body">
-            <h3>Car Transfer</h3>
-            <div class="site-card__features">
-              <p>
-                – Fully Electric, COVID Compliant transport
-              </p>
-            </div>
+            <h3>1 Day Big Bus + 1 Day London Pass</h3>
             <div class="site-card__price">
-              <p>
-                Enter location details for a quick quoteransport
+              <p class="compare-price">
+                <span class="scored">£72.00 </span>£64.99
               </p>
             </div>
             <div class="site-card__cta">
-              <a href="">book a ride</a>
+              <a href="">Buy bundle</a>
             </div>
           </div>
         </div>
         <!-- .site-card  -->
-
         <div class="travel-service__card site-card">
           <div class="site-card__image">
-            <img src="./images/car.png" alt="car transfer" />
+            <img
+              class="img-fluid"
+              src="./images/oyster-small.png"
+              alt="oyster"
+            />
+            <img class="img-fluid" src="./images/THREE.CO.png" alt="three" />
             <!-- prettier-ignore -->
             <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
-                <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
-                  <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#fff" stroke-width="2"/>
-                </g>
-              </svg>
+              <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
+                <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#fff" stroke-width="2"/>
+              </g>
+            </svg>
+            <div class="site-card__collect">
+              <a href="#">Click and Collect</a>
+            </div>
           </div>
           <div class="site-card__body">
-            <h3>Car Transfer</h3>
-            <div class="site-card__features">
-              <p>
-                – Fully Electric, COVID Compliant transport
-              </p>
-            </div>
+            <h3>Visitor Oyster card + 1 Day London Pass</h3>
             <div class="site-card__price">
-              <p>
-                Enter location details for a quick quoteransport
+              <p class="compare-price">
+                <span class="scored">£72.00 </span>£64.99
               </p>
             </div>
             <div class="site-card__cta">
-              <a href="">book a ride</a>
+              <a href="">Buy bundle</a>
             </div>
           </div>
         </div>
         <!-- .site-card  -->
+      </div>
+    </section>
 
+    <!-- SECTION SIM -->
+
+    <section class="sim section content-block">
+      <h2>UK SIM cards for click and collect at Heathrow</h2>
+      <div class="sim-inner">
         <div class="travel-service__card site-card">
-          <div class="site-card__image">
-            <img src="./images/car.png" alt="car transfer" />
+          <div class="site-card__image  site-card__image-sim">
+            <img class="img-fluid" src="./images/EE.png" alt="ee" />
             <!-- prettier-ignore -->
             <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
-                <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
-                  <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#fff" stroke-width="2"/>
-                </g>
-              </svg>
+              <g id="Group_2445" data-name="Group 2445" transform="translate(-1343 -189)">
+                <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#071115" stroke-width="2"/>
+              </g>
+            </svg>
+
+            <div class="site-card__collect">
+              <a href="#">Click and Collect</a>
+            </div>
           </div>
           <div class="site-card__body">
-            <h3>Car Transfer</h3>
-            <div class="site-card__features">
-              <p>
-                – Fully Electric, COVID Compliant transport
-              </p>
-            </div>
+            <h3>EE International</h3>
             <div class="site-card__price">
-              <p>
-                Enter location details for a quick quoteransport
+              <p class="compare-price">
+                £30.00
               </p>
             </div>
             <div class="site-card__cta">
-              <a href="">book a ride</a>
+              <a href="">Buy</a>
+            </div>
+          </div>
+        </div>
+        <!-- .site-card  -->
+        <div class="travel-service__card site-card">
+          <div class="site-card__image site-card__image-sim">
+            <img class="img-fluid" src="./images/ThreeMobile.png" alt="three" />
+            <!-- prettier-ignore -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
+              <g id="Group_2445" data-name="Group 2445" transform="translate(-1343 -189)">
+                <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#071115" stroke-width="2"/>
+              </g>
+            </svg>
+
+            <div class="site-card__collect">
+              <a href="#">Click and Collect</a>
+            </div>
+          </div>
+          <div class="site-card__body">
+            <h3>3 Mobile</h3>
+            <div class="site-card__price">
+              <p class="compare-price">
+                £15.00 - £50.00
+              </p>
+            </div>
+            <div class="site-card__cta">
+              <a href="">View deals</a>
+            </div>
+          </div>
+        </div>
+        <!-- .site-card  -->
+        <div class="travel-service__card site-card">
+          <div class="site-card__image site-card__image-sim">
+            <img
+              class="img-fluid"
+              src="./images/LycaMobile.png"
+              alt="LycaMobile"
+            />
+            <!-- prettier-ignore -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
+              <g id="Group_2445" data-name="Group 2445" transform="translate(-1343 -189)">
+                <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#071115" stroke-width="2"/>
+              </g>
+            </svg>
+
+            <div class="site-card__collect">
+              <a href="#">Click and Collect</a>
+            </div>
+          </div>
+          <div class="site-card__body">
+            <h3>Lyca Mobile</h3>
+            <div class="site-card__price">
+              <p class="compare-price">
+                £30.00
+              </p>
+            </div>
+            <div class="site-card__cta">
+              <a href="">Buy</a>
             </div>
           </div>
         </div>
@@ -759,6 +856,7 @@
         });
       });
     </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./app.js"></script>
   </body>
 </html>

@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: center;
   padding: 5px 15px;
+  @include respond-below(sm) {
+    text-align: center;
+  }
   > p {
     color: $color__bright;
     font-size: 14px;
@@ -106,6 +109,23 @@
   .nav-item {
     &:hover {
       cursor: pointer;
+      svg {
+        opacity: 0.8;
+      }
+    }
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: transparent;
+      background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='12.728' height='6.364' viewBox='0 0 12.728 6.364'%3E%3Cpath id='Path_782' data-name='Path 782' d='M803.324,49.98l-6.364,6.364L790.6,49.98Z' transform='translate(-790.596 -49.98)' fill='%2304141c'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position-x: 100%;
+      background-position-y: 50%;
+      padding-right: 13px;
+      &:hover {
+        cursor: pointer;
+      }
+      border: none;
     }
   }
 }

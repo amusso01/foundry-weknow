@@ -245,6 +245,7 @@ h3,
 .content-block {
   width: 90%;
   margin: auto;
+  max-width: 1360px;
 }
 
 .img-fluid {
@@ -349,6 +350,12 @@ h3,
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5px 15px;
+}
+
+@media (max-width: 767px) {
+  .site-banner {
+    text-align: center;
+  }
 }
 
 .site-banner > p {
@@ -511,6 +518,26 @@ h3,
 }
 
 .user-interaction .nav-item:hover {
+  cursor: pointer;
+}
+
+.user-interaction .nav-item:hover svg {
+  opacity: 0.8;
+}
+
+.user-interaction .nav-item select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='12.728' height='6.364' viewBox='0 0 12.728 6.364'%3E%3Cpath id='Path_782' data-name='Path 782' d='M803.324,49.98l-6.364,6.364L790.6,49.98Z' transform='translate(-790.596 -49.98)' fill='%2304141c'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  padding-right: 13px;
+  border: none;
+}
+
+.user-interaction .nav-item select:hover {
   cursor: pointer;
 }
 
@@ -723,6 +750,10 @@ h3,
           transform: translate(-50%, -50%);
 }
 
+.site-card {
+  max-width: 400px;
+}
+
 .site-card__image {
   position: relative;
 }
@@ -739,6 +770,10 @@ h3,
 
 .site-card__image > svg:hover path {
   fill: #ffffff;
+}
+
+.site-card__image-sim > svg:hover path {
+  fill: #04141c;
 }
 
 .site-card__collect {
@@ -769,6 +804,16 @@ h3,
 .site-card p {
   color: #778591;
   font-size: 15px;
+}
+
+.site-card p.compare-price {
+  color: #04141c;
+}
+
+.site-card p > span {
+  color: #a12027;
+  text-decoration: line-through;
+  margin-right: 5px;
 }
 
 .site-card__price {
@@ -810,8 +855,9 @@ h3,
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 15px;
   justify-items: center;
 }
 
@@ -836,6 +882,66 @@ h3,
 
 .travel-service__all > a {
   text-decoration: underline;
+}
+
+.sim {
+  margin-top: 20px;
+  margin: auto;
+  width: 80%;
+}
+
+@media (max-width: 991px) {
+  .sim {
+    width: 100%;
+    padding: 0px 15px;
+  }
+}
+
+.sim > h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sim-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .sim-inner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.sim-inner .site-card__image {
+  background-color: #eaecee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 340px;
+}
+
+@media (max-width: 767px) {
+  .sim-inner .site-card__image {
+    min-width: 340px;
+  }
+}
+
+.sim-inner .site-card__image > img {
+  width: 180px;
 }
 
 .hamburger .line {
