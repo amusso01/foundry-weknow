@@ -365,6 +365,7 @@ h3,
 .site-banner > p a {
   color: #ffffff;
   font-size: 14px;
+  text-decoration: underline;
 }
 
 .site-banner > p a:hover {
@@ -598,7 +599,7 @@ h3,
   height: 100vh;
   top: 45px;
   left: -80%;
-  padding: 20px 35px;
+  padding: 20px 15px;
   pointer-events: none;
   opacity: 0;
   -webkit-transition: 0.5s;
@@ -626,6 +627,100 @@ h3,
 
 .header-item__mobile .book-menu-mobile__nav > li > a {
   font-size: 14px;
+}
+
+.header-item__mobile .user-interaction {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.header-item__mobile .user-interaction > li {
+  margin-right: 20px;
+}
+
+.header-item__mobile .book-menu-mobile__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.header-item__mobile .mobile-nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header-item__mobile .mobile-nav-header .icon-group {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.header-item__mobile .search-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.header-item__mobile input {
+  height: 50px;
+  min-width: 130px;
+  color: #778591;
+  border: 1px solid #d8d8d8;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 5px;
+  font-size: 17px;
+}
+
+.header-item__mobile .search-group__btn {
+  min-height: 50px;
+  min-width: 50px;
+  background-color: #00a6d3;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: -2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-item__mobile .search-group__btn:hover {
+  cursor: pointer;
+  background-color: #008bb2;
+}
+
+.header-item__mobile .search-group__icon > svg {
+  width: 24px;
+  height: 24px;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .site-card__image {
