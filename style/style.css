@@ -955,9 +955,6 @@ h3,
 
 .footer__nav-item > a:hover {
   color: #00a6d3;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #778591;
-          text-decoration-color: #778591;
 }
 
 @media (max-width: 767px) {
