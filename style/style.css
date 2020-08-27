@@ -1114,12 +1114,21 @@ span.sale {
   max-width: 100%;
 }
 
+.popular-section {
+  pointer-events: none;
+}
+
 .popular-section > h2 {
   margin-bottom: 50px;
 }
 
 .collect-section > h2 {
   margin-bottom: 50px;
+}
+
+.footer-cookies a {
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 .slide {
