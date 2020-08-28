@@ -45,6 +45,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 15px;
+  justify-items: center;
   row-gap: 20px;
   @include respond-below(sm) {
     grid-template-columns: 1fr;
@@ -56,6 +57,7 @@
     align-items: center;
     justify-content: center;
     min-height: 340px;
+    min-width: 360px;
     @include respond-below(sm) {
       min-width: 340px;
     }
