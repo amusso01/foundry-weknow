@@ -55,6 +55,9 @@
     justify-content: center;
     min-height: 340px;
     min-width: 360px;
+    @include respond-below(lg) {
+      min-width: auto;
+    }
     @include respond-below(sm) {
       min-width: 340px;
     }

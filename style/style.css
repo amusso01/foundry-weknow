@@ -778,6 +778,12 @@ h3,
   cursor: pointer;
 }
 
+@media (max-width: 991px) {
+  .main-nav__control {
+    text-align: center;
+  }
+}
+
 .main-nav__control:hover {
   cursor: pointer;
 }
@@ -802,7 +808,7 @@ h3,
 
 @media (max-width: 991px) {
   .main-nav .book-menu {
-    min-width: 760px;
+    min-width: 710px;
     left: -70%;
     text-align: center;
   }
@@ -1163,6 +1169,12 @@ h3,
           justify-content: center;
   min-height: 340px;
   min-width: 360px;
+}
+
+@media (max-width: 1279px) {
+  .sim-inner .site-card__image {
+    min-width: auto;
+  }
 }
 
 @media (max-width: 767px) {

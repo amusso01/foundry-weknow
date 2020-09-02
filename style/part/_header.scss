@@ -130,6 +130,9 @@
   }
 }
 .main-nav__control {
+  @include respond-below(md) {
+    text-align: center;
+  }
   &:hover {
     cursor: pointer;
   }
@@ -150,7 +153,7 @@
     transition: 0.5s;
 
     @include respond-below(md) {
-      min-width: 760px;
+      min-width: 710px;
       left: -70%;
       text-align: center;
     }
