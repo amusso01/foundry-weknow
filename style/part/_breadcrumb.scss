@@ -1,0 +1,24 @@
+ol.breadcrumb {
+  min-height: 60px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+ol.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+ol.breadcrumb li + li:before {
+  padding: 8px;
+  color: $color__text;
+  content: "/\00a0";
+}
+ol.breadcrumb li a {
+  color: $color__text;
+  text-decoration: none;
+  font-size: 14px;
+}
+ol.breadcrumb li a:hover {
+  color: $color__main;
+  text-decoration: underline;
+}

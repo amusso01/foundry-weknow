@@ -13,9 +13,6 @@
     @include respond-below(md) {
       grid-template-columns: repeat(2, 1fr);
     }
-    @include respond-below(sm) {
-      grid-template-columns: 1fr;
-    }
   }
   &__all {
     text-align: right;
