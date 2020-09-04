@@ -213,6 +213,80 @@
       </div>
     </header>
 
+    <!-- BREADCRUMB -->
+    <section class="site-breadcrumb">
+      <div class="content-block">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="./cart.html">Cart</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Secure Checkout
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- MAIN -->
+    <main class="checkout-main content-block">
+      <h2>Welcome to secure chekout</h2>
+      <div class="checkout-inner">
+        <div class="checkout-signin checkout-card">
+          <div class="checkout-radio">
+            <p>Sign in</p>
+          </div>
+          <p>Checkout faster with saved details</p>
+        </div>
+        <div class="signin-checkout checkout-hide">
+          <form action="#">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email1"
+                aria-describedby="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                aria-describedby="password"
+              />
+            </div>
+            <div class="btn-wrapper">
+              <button type="submit" class="btn">Sign in</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="checkout-guest  checkout-card">
+          <div class="checkout-radio"><p>Checkout as guest</p></div>
+          <p>With the option to create an account later</p>
+        </div>
+        <div class="guest-checkout checkout-hide">
+          <form action="#">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email2"
+                aria-describedby="email"
+              />
+            </div>
+            <div class="btn-wrapper">
+              <a href="./secure-checkout-guest.html" class="btn">Continue</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
     <!-- Footer -->
     <footer class="site-footer">
       <div class="footer__inner">

@@ -1,0 +1,49 @@
+.shop {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    column-gap: 50px;
+  }
+  &__filter {
+    margin-top: 17px;
+    > h3 {
+      font-size: 17px;
+    }
+    > p {
+      font-size: 14px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__form {
+    > p {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  }
+  &__item {
+    > h2 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    &-body {
+      margin-top: 80px;
+      p {
+        line-height: 25px;
+      }
+    }
+  }
+  &__card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+  }
+  .grey-line {
+    margin: 15px 0px;
+  }
+}

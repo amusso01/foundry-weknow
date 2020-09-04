@@ -34,8 +34,9 @@
 }
 
 .badger-accordion__header {
-  &:not(:last-of-type) {
-    border-bottom: 1px solid $color__light-grey;
+  border-bottom: 1px solid $color__light-grey;
+  &:first-of-type {
+    border-top: 1px solid $color__light-grey;
   }
 }
 
@@ -143,6 +144,9 @@
 
 .badger-accordion__panel-inner {
   padding: 15px 15px 30px;
+  > p {
+    color: $color__grey;
+  }
 }
 
 @media screen and (max-width: 767px) {

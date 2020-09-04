@@ -1,0 +1,65 @@
+.coronavirus-main {
+  margin-top: 25px;
+  > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .image-booking {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    &__body {
+      padding: 16px 16px 30px;
+      max-width: 650px;
+      margin: auto;
+      text-align: center;
+      > p {
+        margin-bottom: 20px;
+      }
+      > a {
+        color: $color__main;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .coronavirus-paragraph {
+    > p {
+      color: $color__grey;
+      margin-bottom: 45px;
+    }
+    > h2 {
+      margin-bottom: 10px;
+      padding-left: 15px;
+    }
+  }
+  &__accordion {
+    margin-bottom: 65px;
+    > h2 {
+      margin: 40px 0px 15px;
+      padding-left: 15px;
+    }
+  }
+  .help {
+    background-color: $color__light-grey;
+    max-width: 800px;
+    min-height: 160px;
+    margin: 65px auto 75px;
+    display: flex;
+    align-items: center;
+    &__inner {
+      text-align: center;
+      padding: 15px 80px;
+      .help__title {
+        margin-bottom: 15px;
+      }
+      p {
+        line-height: 26px;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

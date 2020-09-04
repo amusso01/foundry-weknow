@@ -1,0 +1,36 @@
+.privacy-main {
+  > h2 {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  > p {
+    font-size: 12px;
+    padding: 0px 15px 5px;
+  }
+  .badger-accordion__panel-inner {
+    p {
+      color: $color__grey;
+    }
+  }
+  .help {
+    background-color: $color__light-grey;
+    max-width: 800px;
+    min-height: 160px;
+    margin: 65px auto 75px;
+    display: flex;
+    align-items: center;
+    &__inner {
+      text-align: center;
+      padding: 15px 80px;
+      .help__title {
+        margin-bottom: 15px;
+      }
+      p {
+        line-height: 26px;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.checkout-main {
+  margin-top: 50px;
+  min-height: 75vh;
+  margin-bottom: 90px;
+  > h2 {
+    text-align: center;
+  }
+  .checkout-inner {
+    max-width: 530px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .checkout-card {
+    border: 1px solid $color__light-grey;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+    > p {
+      color: $color__grey;
+      font-size: 14px;
+      padding-left: 25px;
+      margin-top: 6px;
+    }
+    .checkout-radio {
+      > p {
+        position: relative;
+        padding-left: 25px;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0px;
+          top: 3px;
+          width: 14px;
+          height: 14px;
+          border: 1px solid $color__grey;
+          border-radius: 10px;
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          background-color: $color__light-grey;
+          width: 8px;
+          height: 8px;
+          left: 3px;
+          top: 6px;
+          border-radius: 50%;
+          transition: 0.3s;
+        }
+      }
+    }
+    &-active {
+      .checkout-radio {
+        > p {
+          &::after {
+            background-color: $color__main;
+          }
+        }
+      }
+    }
+  }
+  .checkout-hide {
+    padding: 20px 40px;
+    box-shadow: 0px 0px 8px #00000033;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: none;
+    &-open {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .btn {
+      border: none;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
