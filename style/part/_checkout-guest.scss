@@ -1,0 +1,88 @@
+.guestCheckout-main {
+  margin-top: 30px;
+  margin-bottom: 120px;
+  > h2 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .guestCheckout__inner {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .customer-details {
+    border-right: 1px solid $color__light-grey;
+    padding: 15px 60px 10px 0px;
+    > h3 {
+      margin-bottom: 22px;
+    }
+    input {
+      margin-bottom: 15px;
+    }
+    .mobileGroup {
+      display: flex;
+    }
+    #title {
+      width: 30%;
+    }
+    #mobileNumber {
+      flex: 1;
+      min-height: 50px;
+      border: 1px solid $color__light-grey;
+      border-radius: 5px;
+      padding-left: 10px;
+      margin-bottom: 0px;
+    }
+    #mobileId {
+      border: 1px solid $color__light-grey;
+      border-radius: 5px;
+      padding-left: 10px;
+      width: 30%;
+      margin-right: 10px;
+    }
+    .address {
+      margin: 30px 0px 20px;
+    }
+    .btn {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  .order-details {
+    padding: 15px 0px 10px 60px;
+    > h3 {
+      margin-bottom: 22px;
+    }
+    &__inner {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 30px;
+      padding: 10px 0px;
+      border-top: 1px solid $color__light-grey;
+      border-bottom: 1px solid $color__light-grey;
+      margin-bottom: 10px;
+    }
+    .cart__order-info {
+      .h5 {
+        margin-bottom: 15px;
+      }
+    }
+    .journey-info {
+      > p {
+        margin-bottom: 6px;
+        > span {
+          color: $color__grey;
+        }
+      }
+    }
+    .order-info__total {
+      display: flex;
+      justify-content: space-between;
+      > p {
+        font-size: 14px;
+      }
+    }
+  }
+}

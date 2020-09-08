@@ -59,6 +59,7 @@ docReady(function() {
   var signInCard = document.querySelectorAll(".checkout-card");
   var guestCheck = document.querySelector(".guest-checkout");
   var signinCheck = document.querySelector(".signin-checkout");
+  var creditCheck = document.querySelector(".creditCard-checkout");
   if (typeof signInCard != "undefined" && signInCard != null) {
     signInCard.forEach(function(e) {
       e.addEventListener("click", function(el) {
@@ -68,16 +69,37 @@ docReady(function() {
 
         e.classList.toggle("checkout-card-active");
 
-        if (e.classList.contains("checkout-signin")) {
-          if (guestCheck.classList.contains("checkout-hide-open")) {
-            guestCheck.classList.remove("checkout-hide-open");
+        if (typeof signinCheck != "undefined" && signinCheck != null) {
+          if (e.classList.contains("checkout-signin")) {
+            if (guestCheck.classList.contains("checkout-hide-open")) {
+              guestCheck.classList.remove("checkout-hide-open");
+            }
+            signinCheck.classList.toggle("checkout-hide-open");
+          } else {
+            if (signinCheck.classList.contains("checkout-hide-open")) {
+              signinCheck.classList.remove("checkout-hide-open");
+            }
+            guestCheck.classList.toggle("checkout-hide-open");
           }
-          signinCheck.classList.toggle("checkout-hide-open");
+        }
+      });
+    });
+  }
+  if (typeof creditCheck != "undefined" && creditCheck != null) {
+    signInCard.forEach(function(e) {
+      e.addEventListener("click", function(el) {
+        signInCard.forEach(function(card) {
+          card.classList.remove("checkout-card-active");
+        });
+
+        e.classList.toggle("checkout-card-active");
+
+        if (e.classList.contains("checkout-creditCard")) {
+          creditCheck.classList.toggle("checkout-hide-open");
         } else {
-          if (signinCheck.classList.contains("checkout-hide-open")) {
-            signinCheck.classList.remove("checkout-hide-open");
+          if (creditCheck.classList.contains("checkout-hide-open")) {
+            creditCheck.classList.remove("checkout-hide-open");
           }
-          guestCheck.classList.toggle("checkout-hide-open");
         }
       });
     });
