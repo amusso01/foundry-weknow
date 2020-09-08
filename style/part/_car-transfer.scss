@@ -116,7 +116,7 @@
       text-decoration: underline;
     }
     .btn-wrapper {
-      > button {
+      .btn {
         border: none;
         width: 100%;
       }
@@ -406,7 +406,7 @@
       width: 4px;
       border-radius: 50%;
       background: $color__bright;
-      animation: pulse 2s infinite;
+      animation: pulse 1s infinite;
       transform-origin: center center;
     }
   }
