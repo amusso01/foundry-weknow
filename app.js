@@ -104,4 +104,20 @@ docReady(function() {
       });
     });
   }
+
+  // CAR TRANSFER
+  let addStop = document.getElementById("addStop");
+  let roundTrip = document.getElementById("roundTrip");
+  const stopInput = document.querySelector(".more-stop");
+  const retunrInput = document.querySelector(".form-group-return");
+  if (typeof addStop != "undefined" && addStop != null) {
+    addStop.addEventListener("click", function() {
+      stopInput.classList.add("more-stop-active");
+    });
+  }
+  if (typeof roundTrip != "undefined" && roundTrip != null) {
+    roundTrip.addEventListener("change", function() {
+      retunrInput.classList.toggle("form-group-return-active");
+    });
+  }
 });

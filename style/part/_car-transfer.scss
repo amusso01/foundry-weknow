@@ -128,6 +128,23 @@
   flex-direction: column;
   margin-bottom: 10px;
   position: relative;
+  .more-stop {
+    margin-top: 10px;
+    display: none;
+    &-active {
+      display: block;
+    }
+    label {
+      font-family: $header__fontname;
+    }
+    input {
+      min-height: 50px;
+      border: 1px solid #eaecee;
+      border-radius: 5px;
+      padding-left: 10px;
+      width: 100%;
+    }
+  }
   &-multi {
     flex-direction: row;
     margin-top: 20px;
@@ -142,6 +159,7 @@
         border: 1px solid $color__light-grey;
         border-radius: 5px;
         padding-left: 10px;
+        padding-right: 10px;
       }
       > label {
         font-weight: bold;
@@ -155,7 +173,6 @@
       width: 50%;
       select {
         padding-left: 10px;
-        padding-top: 10px;
         border: none;
         border: 1px solid $color__light-grey;
         border-radius: 5px;
@@ -166,7 +183,7 @@
         background: transparent;
         background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='12.728' height='6.364' viewBox='0 0 12.728 6.364'%3E%3Cpath id='Path_782' data-name='Path 782' d='M803.324,49.98l-6.364,6.364L790.6,49.98Z' transform='translate(-790.596 -49.98)' fill='%2304141c'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
-        background-position-x: 100%;
+        background-position-x: 93%;
         background-position-y: 50%;
         padding-right: 13px;
         &:first-of-type {
@@ -235,6 +252,7 @@
 
   .slider.round:before {
     border-radius: 50%;
+    border-color: none;
   }
   > label {
     font-weight: bold;
@@ -245,6 +263,9 @@
     border: 1px solid $color__light-grey;
     border-radius: 5px;
     padding-left: 10px;
+  }
+  .switch input:checked + span::before {
+    border-color: $color__grey;
   }
   .addStop {
     text-align: right;
@@ -262,6 +283,13 @@
         top: 4px;
       }
     }
+  }
+}
+
+.form-group-return {
+  display: none;
+  &-active {
+    display: flex;
   }
 }
 

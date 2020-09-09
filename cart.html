@@ -52,7 +52,7 @@
             <div class="mobile-nav-header">
               <div class="search-group">
                 <input
-                  type="search"
+                  type="text"
                   class="search-group__input"
                   placeholder="What are you looking for?"
                 />
@@ -85,7 +85,9 @@
               <div class="book-menu-mobile__item">
                 <p class="book-menu-mobile__title">TRANSPORT</p>
                 <ul class="book-menu-mobile__nav">
-                  <li><a href="./car-transfer.html">Car Transfers</a></li>
+                  <li>
+                    <a href="./car-transfer.html">Private Car Tranasfers</a>
+                  </li>
                   <li><a href="#">Heathrow E-shuttle</a></li>
                   <li><a href="#">Heathrow Express</a></li>
                   <li><a href="#">National Express</a></li>
@@ -120,7 +122,7 @@
         <div class="header-item header-item__search">
           <div class="search-group">
             <input
-              type="search"
+              type="text"
               class="search-group__input"
               placeholder="What are you looking for?"
             />
@@ -148,7 +150,9 @@
                 <div class="book-menu__item">
                   <p class="book-menu__title">TRANSPORT</p>
                   <ul class="book-menu__nav">
-                    <li><a href="./car-transfer.html">Car Transfers</a></li>
+                    <li>
+                      <a href="./car-transfer.html">Private Car Tranasfers</a>
+                    </li>
                     <li><a href="#">Heathrow E-shuttle</a></li>
                     <li><a href="#">Heathrow Express</a></li>
                     <li><a href="#">National Express</a></li>
@@ -266,16 +270,15 @@
         <div class="cart__summary">
           <h2>Summary</h2>
           <p>
-            <span><i></i></span>Your driver will meet you at the WeKnowLondon
-            desk in the arrivals hall.
+            Your driver will meet you at the WeKnowLondon desk in the arrivals
+            hall.
           </p>
           <p>
-            <span><i></i></span>Your order entitles you to 130 Heathrow Rewards
-            points
+            Your order entitles you to 130 Heathrow Rewards points
           </p>
           <p>
-            <span><i></i></span>By choosing an electric vehicle you have saved
-            12kg of CO2 on this journey. Thank you!
+            By choosing an electric vehicle you have saved 12kg of CO2 on this
+            journey. Thank you!
           </p>
           <div class="grey-line"></div>
           <div class="cart-total">
@@ -421,7 +424,58 @@
             </button>
           </div>
           <div class="modal-body">
-            TODO MODAL
+            <div class="modal-img">
+              <img class="img-fluid" src="./images/wk-three.jpg" alt="three" />
+            </div>
+            <div class="modal-info">
+              <h2>Three Mobile SIM Card</h2>
+              <p class="h3">£15.00 - £50.00</p>
+              <div class="grey-line"></div>
+              <p>
+                Please note: This product is only available for click and
+                collect.
+              </p>
+              <a href="#">Find out more</a>
+              <div class="grey-line"></div>
+              <p class="h3">Select your plan</p>
+              <div class="grey-line"></div>
+              <form action="#">
+                <select name="simcard" id="threeCard" multiple>
+                  <option value="1">1GB Broadband SIM</option>
+                  <option value="2">3GB Broadband SIM</option>
+                  <option value="3"
+                    >All in 35 Bundle - Unlimited texts & minutes, 12GB
+                    data</option
+                  >
+                  <option value="4"
+                    >All in 35 Bundle - Unlimited texts, minutes & data</option
+                  >
+                </select>
+                <div class="quantity-selector">
+                  <div class="product-minus-button quantity-button">
+                    <span>-</span>
+                  </div>
+                  <input
+                    type="number"
+                    name="quantity"
+                    id="quantity"
+                    class="quantity-selector-field"
+                    value="1"
+                  />
+                  <div class="product-plus-button quantity-button">
+                    <span>+</span>
+                  </div>
+                </div>
+                <div class="grey-line"></div>
+                <div class="center">
+                  <p>£15.00 - £50.00</p>
+                  <p>Currently in stock online</p>
+                </div>
+                <div class="btn__wrapper">
+                  <a href="#" class="btn">Add to Basket</a>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

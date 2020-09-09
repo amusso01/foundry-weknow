@@ -9,8 +9,8 @@
   outline: 0;
 }
 .modal-dialog {
-  max-width: 500px;
-  margin: 64px auto;
+  max-width: 830px;
+  margin: 25px auto;
   position: relative;
   width: auto;
   pointer-events: none;
@@ -30,24 +30,14 @@
 .modal-header {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
-  padding: 16px;
+  justify-content: flex-end;
+  padding: 10px;
+  margin-right: 6px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 .modal-body {
-  position: relative;
-  flex: 1 1 auto;
   padding: 16px;
-}
-.modal-footer {
-  display: flex;
-  justify-content: flex-end;
-  padding: 16px;
-}
-.modal-title {
-  margin: 0;
-  line-height: 1.5;
 }
 .modal-close {
   margin: 0;
@@ -100,5 +90,82 @@
   to {
     transform: scale(1.2);
     opacity: 0;
+  }
+}
+
+// MODAL UPSELL
+.modal-body {
+  display: flex;
+}
+.modal-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  > img {
+    width: 90%;
+  }
+}
+.modal-info {
+  h2 {
+    font-size: 21px;
+  }
+  .h3 {
+    font-size: 18px;
+    font-family: $text__fontname;
+  }
+  .grey-line {
+    margin: 10px 0px;
+  }
+  p,
+  a {
+    font-size: 15px;
+  }
+  a {
+    text-decoration: underline;
+  }
+  .center {
+    text-align: center;
+    margin: 20px 0px 0px;
+  }
+  .btn {
+    text-decoration: none;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .quantity-selector {
+    z-index: 1;
+    visibility: visible;
+    display: block;
+    width: 100%;
+    padding: 0 0 25px 0;
+  }
+  .product-minus-button,
+  .product-plus-button {
+    padding: 0;
+    height: 45px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    font-size: 32px;
+    background: #e5e5e5;
+    border-radius: 5px;
+    span {
+      line-height: 40px;
+    }
+  }
+  .quantity-selector input {
+    max-width: 70px;
+    font-size: 1em;
+    position: relative;
+    z-index: 1;
+    margin: 0 -1px;
+    background: #f3f3f3;
+    float: left;
+    display: block;
+    width: 41%;
+    text-align: center;
+    height: 45px;
+    border: none;
   }
 }

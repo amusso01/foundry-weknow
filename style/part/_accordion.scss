@@ -68,20 +68,9 @@
 
   &:focus,
   &:hover {
-    background-color: $color__main;
+    background-color: #d8d8d8;
     cursor: pointer;
     outline: none;
-
-    .badger-accordion__trigger-title {
-      color: white;
-    }
-
-    .badger-accordion__trigger-icon {
-      &:after,
-      &:before {
-        background-color: white;
-      }
-    }
   }
 
   // Removing "inner outline" for Firefox
