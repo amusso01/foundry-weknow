@@ -8,16 +8,25 @@ ol.breadcrumb li {
   display: inline;
   font-size: 14px;
   color: $color__grey;
+  @include respond-below(sm) {
+    font-size: 12px;
+  }
 }
 ol.breadcrumb li + li:before {
   padding: 8px;
   color: $color__grey;
   content: "/\00a0";
+  @include respond-below(sm) {
+    padding: 5px 1px 5px 2px;
+  }
 }
 ol.breadcrumb li a {
   color: $color__grey;
   text-decoration: none;
   font-size: 14px;
+  @include respond-below(sm) {
+    font-size: 12px;
+  }
 }
 ol.breadcrumb li a:hover {
   color: $color__main;

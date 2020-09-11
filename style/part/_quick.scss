@@ -1,0 +1,142 @@
+.quick-main {
+  margin-bottom: 40px;
+  > h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .quick-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+  }
+  .quick-menus {
+    padding: 35px 3px;
+    border-top: 1px solid $color__text;
+    &__box {
+      margin-bottom: 40px;
+      > h3 {
+        margin-bottom: 15px;
+        font-family: $text__fontname;
+      }
+      ul {
+        list-style: none;
+        li {
+          margin-bottom: 12px;
+          a {
+            color: $color__grey;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .faq {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    > h2 {
+      margin-bottom: 40px;
+    }
+    .search-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    input {
+      height: 50px;
+      width: 100%;
+      color: $color__grey;
+      border: 1px solid #d8d8d8;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+      padding: 5px;
+      font-size: 17px;
+    }
+    .search-group__btn {
+      min-height: 50px;
+      min-width: 50px;
+      background-color: $color__text;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      left: -2px;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .search-group__icon {
+      > svg {
+        width: 24px;
+        height: 24px;
+        transform-origin: center center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .help {
+    background-color: $color__light-grey;
+    max-width: 800px;
+    min-height: 160px;
+    margin: 65px auto 75px;
+    display: flex;
+    align-items: center;
+    &__inner {
+      text-align: center;
+      padding: 15px 80px;
+      .help__title {
+        margin-bottom: 15px;
+      }
+      p {
+        line-height: 26px;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.quick-banner {
+  background-image: url("./../images/arrivals.png");
+  background-size: cover;
+  background-repeat: repeat;
+  min-height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.7;
+    z-index: 0;
+  }
+  .center {
+    z-index: 3;
+    text-align: center;
+    h2 {
+      margin-bottom: 26px;
+    }
+    .btn {
+      margin-top: 30px;
+      background-color: transparent;
+      border: 1px solid $color__text;
+      color: $color__text;
+      &:hover {
+        color: $color__bright;
+        background-color: $color__text;
+      }
+    }
+  }
+}

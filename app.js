@@ -28,6 +28,8 @@ docReady(function() {
   var menuMobile = document.getElementById("book-menu-mobile");
   var hamburger = document.getElementById("hamburger-6");
   var htmlElement = document.querySelector("html");
+  const body = document.querySelector("body");
+
   menuButton.addEventListener("click", function() {
     menu.classList.toggle("active");
   });
@@ -38,8 +40,15 @@ docReady(function() {
     htmlElement.classList.toggle("noscroll");
   });
 
+  body.addEventListener("mouseup", function(e) {
+    if (!e.target.classList.contains("main-nav__control")) {
+      menu.classList.remove("active");
+    }
+  });
+
   // ACCORDION
   var accordionPage = document.querySelector(".js-badger-accordion");
+  var accordionProduct = document.querySelector(".js-accordion");
   if (typeof accordionPage != "undefined" && accordionPage != null) {
     const myAccordion = new BadgerAccordion(".js-badger-accordion");
     const myAccordionSecond = new BadgerAccordion(
@@ -47,12 +56,35 @@ docReady(function() {
     );
     const myAccordionThird = new BadgerAccordion(".js-badger-accordion-third");
   }
+  if (typeof accordionProduct != "undefined" && accordionProduct != null) {
+    const productAccordion = new BadgerAccordion(".js-accordion");
+  }
 
   // MODAL
   var modalUpsell = document.getElementById("upsellModal");
+  var terminal2 = document.getElementById("terminal2");
+  var terminal3 = document.getElementById("terminal3");
+  var terminal4 = document.getElementById("terminal4");
+  var terminal5 = document.getElementById("terminal5");
   if (typeof modalUpsell != "undefined" && modalUpsell != null) {
     const modal1 = new PureModal("upsellModal");
     modal1.init();
+  }
+  if (typeof terminal2 != "undefined" && terminal2 != null) {
+    const modal2 = new PureModal("terminal2");
+    modal2.init();
+  }
+  if (typeof terminal3 != "undefined" && terminal3 != null) {
+    const modal3 = new PureModal("terminal3");
+    modal3.init();
+  }
+  if (typeof terminal4 != "undefined" && terminal4 != null) {
+    const modal4 = new PureModal("terminal4");
+    modal4.init();
+  }
+  if (typeof terminal5 != "undefined" && terminal5 != null) {
+    const modal5 = new PureModal("terminal5");
+    modal5.init();
   }
 
   // SIGN IN
@@ -118,6 +150,32 @@ docReady(function() {
   if (typeof roundTrip != "undefined" && roundTrip != null) {
     roundTrip.addEventListener("change", function() {
       retunrInput.classList.toggle("form-group-return-active");
+    });
+  }
+
+  // QUANTITY SELECTOR
+  const increase = document.querySelectorAll(".qty-increase");
+  const decrease = document.querySelectorAll(".qty-decrease");
+
+  if (typeof increase != "undefined" && increase != null) {
+    increase.forEach(function(element) {
+      element.addEventListener("click", function(e) {
+        e.preventDefault();
+        let prev = e.target.previousElementSibling;
+        prev.value++;
+      });
+    });
+  }
+
+  if (typeof decrease != "undefined" && decrease != null) {
+    decrease.forEach(function(element) {
+      element.addEventListener("click", function(e) {
+        e.preventDefault();
+        let next = e.target.nextElementSibling;
+        if (next.value > 0) {
+          next.value--;
+        }
+      });
     });
   }
 });

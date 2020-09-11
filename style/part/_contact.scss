@@ -1,0 +1,89 @@
+.banner-contact {
+  background-image: url("./../images/contact-banner.png");
+  background-size: cover;
+  background-repeat: repeat;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  h1 {
+    color: $color__bright;
+  }
+  .site-breadcrumb {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    ol > li > a {
+      color: $color__bright;
+    }
+    ol > li {
+      color: $color__bright;
+    }
+    ol.breadcrumb li + li:before {
+      color: $color__bright;
+    }
+  }
+}
+.contact-main {
+  margin: 90px 0px 0px;
+  .center {
+    max-width: 800px;
+    text-align: center;
+  }
+  .contact-black {
+    background-color: $color__text;
+    padding: 80px 0px;
+    p,
+    a {
+      color: $color__bright;
+    }
+    h2 {
+      color: $color__bright;
+      margin-bottom: 23px;
+    }
+    .btn {
+      margin-top: 23px;
+      min-width: 270px;
+    }
+    .contact-terminal {
+      margin-top: 100px;
+      margin-bottom: 66px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      row-gap: 40px;
+      a {
+        text-decoration: underline;
+        margin-bottom: 7px;
+        display: block;
+      }
+      p {
+        margin-bottom: 7px;
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .contact-icon {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    a {
+      margin-right: 30px;
+      span {
+        margin-right: 4px;
+        svg {
+          width: 16px;
+          height: 16px;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+  }
+}
