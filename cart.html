@@ -451,7 +451,7 @@
             <div class="modal-img">
               <img class="img-fluid" src="./images/wk-three.jpg" alt="three" />
             </div>
-            <div class="modal-info">
+            <div class="product-info">
               <h2>Three Mobile SIM Card</h2>
               <p class="h3">£15.00 - £50.00</p>
               <div class="grey-line"></div>
@@ -461,40 +461,49 @@
               </p>
               <a href="#">Find out more</a>
               <div class="grey-line"></div>
-              <p class="h3">Select your plan</p>
-              <div class="grey-line"></div>
+              <p class="h3 select-plan">Select your plan</p>
+
               <form action="#">
-                <select name="simcard" id="threeCard" multiple>
-                  <option value="1">1GB Broadband SIM</option>
-                  <option value="2">3GB Broadband SIM</option>
-                  <option value="3"
+                <label class="radio">
+                  <input type="radio" name="plan" value="1gb" />
+                  <span>1GB Broadband SIM</span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="plan" value="3gb" />
+                  <span>3GB Broadband SIM</span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="plan" value="all35" />
+                  <span
+                    >All in 35 Bundle - Unlimited texts, minutes & data</span
+                  >
+                </label>
+                <label class="radio">
+                  <input type="radio" name="plan" value="12gb" />
+                  <span
                     >All in 35 Bundle - Unlimited texts & minutes, 12GB
-                    data</option
+                    data</span
                   >
-                  <option value="4"
-                    >All in 35 Bundle - Unlimited texts, minutes & data</option
-                  >
-                </select>
-                <div class="quantity-selector">
-                  <div class="product-minus-button quantity-button">
-                    <span>-</span>
-                  </div>
-                  <input
-                    type="number"
-                    name="quantity"
-                    id="quantity"
-                    class="quantity-selector-field"
-                    value="1"
-                  />
-                  <div class="product-plus-button quantity-button">
-                    <span>+</span>
+                </label>
+
+                <div class="qty__selector-module">
+                  <p class="h5">Quantity</p>
+                  <div class="qty__selector-module-controls">
+                    <button id="decrease" class="qty-decrease">&minus;</button>
+                    <input
+                      class="qtySelector"
+                      id="qtySelector"
+                      type="text"
+                      name="qtySelector"
+                      value="0"
+                      placeholder=""
+                      readonly="readonly"
+                    />
+                    <button class="qty-increase" id="increase">&plus;</button>
                   </div>
                 </div>
                 <div class="grey-line"></div>
-                <div class="center">
-                  <p>£15.00 - £50.00</p>
-                  <p>Currently in stock online</p>
-                </div>
+
                 <div class="btn__wrapper">
                   <a href="#" class="btn">Add to Basket</a>
                 </div>

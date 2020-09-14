@@ -317,6 +317,9 @@
   margin: 75px 0px;
   p {
     color: $color__bright;
+    @include respond-below(md) {
+      color: $color__text;
+    }
   }
   @include respond-below(sm) {
     margin: 50px 0px;
@@ -330,8 +333,14 @@
     position: relative;
     padding: 0px 0px 30px;
     @include respond-below(md) {
+      background-image: none;
+      min-height: auto;
+      padding: 0px 0px 0px;
     }
     &::after {
+      @include respond-below(md) {
+        display: none;
+      }
       z-index: 0;
       content: "";
       width: 100%;
@@ -353,23 +362,42 @@
     z-index: 2;
     position: relative;
     padding: 65px 100px;
+    @include respond-below(md) {
+      padding: 0px;
+    }
     > p {
       font-size: 75px;
       line-height: 100px;
       font-weight: bold;
+      @include respond-below(md) {
+        font-size: 32px;
+        line-height: 36px;
+        padding-bottom: 20px;
+      }
     }
   }
   &__body {
     z-index: 2;
     position: relative;
+    @include respond-below(md) {
+      padding: 0px;
+    }
     > p {
       font-size: 27px;
       line-height: 40px;
       font-weight: bold;
+      @include respond-below(md) {
+        font-size: 21px;
+        line-height: 26px;
+        padding-top: 20px;
+      }
     }
   }
   &__live {
     margin-top: 190px;
+    @include respond-below(md) {
+      margin-top: 50px;
+    }
     > p {
       font-size: 21px;
       font-weight: bold;
@@ -384,6 +412,19 @@
       font-size: 50px;
       font-weight: bold;
       margin-right: 8px;
+      @include respond-below(md) {
+        font-size: 32px;
+      }
+    }
+    .miles,
+    .co2 {
+      p {
+        &:last-of-type {
+          @include respond-below(md) {
+            font-size: 12px;
+          }
+        }
+      }
     }
   }
   &__bar {
@@ -420,6 +461,11 @@
     .green {
       color: #12da9f;
     }
+    .target {
+      @include respond-below(md) {
+        font-size: 12px;
+      }
+    }
     .live {
       display: flex;
       align-items: center;
@@ -434,6 +480,9 @@
       width: 10px;
       border: 1px solid $color__bright;
       border-radius: 50%;
+      @include respond-below(md) {
+        border: 1px solid #12da9f;
+      }
     }
     .dot:after {
       content: "";
@@ -446,14 +495,26 @@
       background: $color__bright;
       animation: pulse 1s infinite;
       transform-origin: center center;
+      @include respond-below(md) {
+        background: #12da9f;
+      }
     }
   }
   .information {
     width: 80%;
     margin: auto;
     margin-top: 75px;
+    .content-block__small {
+      @include respond-below(md) {
+        padding: 0px;
+      }
+    }
     p {
       color: $color__text;
+      @include respond-below(md) {
+        font-size: 23px;
+        line-height: 30px;
+      }
       > span {
         color: $color__grey;
       }

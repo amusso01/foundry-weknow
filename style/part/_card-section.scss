@@ -46,10 +46,7 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
-  @include respond-below(sm) {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
+
   .site-card__image {
     background-color: $color__light-grey;
     display: flex;

@@ -32,6 +32,10 @@
       background-color: $color__text;
       padding: 6px 10px;
       font-size: 14px;
+      @include respond-below(md) {
+        padding: 3px 6px;
+        font-size: 12px;
+      }
       &:hover {
         text-decoration: underline;
       }

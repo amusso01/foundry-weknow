@@ -1,11 +1,18 @@
 .product-main {
   margin-top: 70px;
   margin-bottom: 90px;
+  @include respond-below(sm) {
+    margin-top: 40px;
+  }
 }
 .product-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 60px;
+  @include respond-below(sm) {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
   a {
     text-decoration: underline;
   }
@@ -23,11 +30,17 @@
   .select-plan {
     margin-bottom: 20px;
   }
+  .product-img {
+    @include respond-below(sm) {
+      order: 2;
+    }
+  }
   .product-info {
     max-width: 550px;
     @include respond-below(md) {
       max-width: 100%;
     }
+
     .multiselect {
       border: none;
       overflow: visible;
@@ -183,7 +196,7 @@
         height: 48px;
         width: 54px;
         padding: 6px;
-        margin: 0 10px 0 10px;
+        margin: 0 2px 0 1px;
         text-align: center;
         font-size: 18px;
         opacity: 0.7;
@@ -201,9 +214,49 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  @include respond-below(md) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
   span {
     margin-left: auto;
     margin-right: 15px;
     display: inline-block;
+    @include respond-below(md) {
+      display: inline;
+      margin-left: 0px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.product-info {
+  padding: 0px 10px;
+  > form {
+    > .radio {
+      > input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: none;
+        + span {
+          display: block;
+          text-align: center;
+          padding: 10px 0px;
+          border: 1px solid #d8d8d8;
+          border-radius: 5px;
+          margin-bottom: 5px;
+        }
+        &:checked {
+          + span {
+            color: $color__main;
+
+            &::before {
+              border-color: $color__text;
+            }
+          }
+        }
+      }
+    }
   }
 }
