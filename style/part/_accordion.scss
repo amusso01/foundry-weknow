@@ -57,11 +57,11 @@
   &[aria-expanded="true"] {
     .badger-accordion__trigger-icon {
       &:before {
-        transform: rotate(45deg) translate3d(10px, 15px, 0);
+        transform: rotate(45deg) translate3d(8px, 15px, 0);
       }
 
       &:after {
-        transform: rotate(-45deg) translate3d(-10px, 15px, 0);
+        transform: rotate(-45deg) translate3d(-8px, 15px, 0);
       }
     }
   }
@@ -81,16 +81,16 @@
 
 .badger-accordion__trigger-title {
   transition: ease-in-out 0.3s;
-  font-size: 21px;
+  font-size: 17px;
 }
 
 .badger-accordion__trigger-icon {
   display: block;
-  height: 20px;
+  height: 26px;
   margin-left: auto;
   position: relative;
   transition: all ease-in-out 0.2s;
-  width: 20px;
+  width: 16px;
 
   &:after,
   &:before {
@@ -100,18 +100,18 @@
     position: absolute;
     top: 0px;
     transition: all ease-in-out ((0.2s / 3) * 2);
-    width: 20px;
+    width: 16px;
   }
 
   &:before {
-    left: 1px;
+    left: 2px;
     transform: rotate(45deg) translate3d(8px, 22px, 0);
     transform-origin: 100%;
   }
 
   &:after {
     transform: rotate(-45deg) translate3d(-8px, 22px, 0);
-    right: 1px;
+    right: 3px;
     transform-origin: 0;
   }
 }

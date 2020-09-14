@@ -30,10 +30,10 @@
     }
     .multiselect {
       border: none;
-      height: 100%;
       overflow: visible;
       margin-bottom: 15px;
       width: 100%;
+      min-height: 140px;
       &:focus {
         border: none;
         outline: none;
@@ -47,6 +47,18 @@
         border: 1px solid $color__light-grey;
         border-radius: 5px;
         margin-bottom: 10px;
+      }
+      &#ticket {
+        min-height: 210px;
+      }
+      &#ee {
+        min-height: auto;
+      }
+      &#threeCard {
+        min-height: 275px;
+      }
+      &#lyca {
+        min-height: auto;
       }
     }
     .quantity-selector {
@@ -184,7 +196,7 @@
     }
   }
 }
-.qty__selector-module-controls {
+.qty__selector-module-controls.flex {
   display: flex;
   justify-content: space-between;
   align-items: center;

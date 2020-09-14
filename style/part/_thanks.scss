@@ -38,9 +38,15 @@
       font-size: 14px;
       color: $color__grey;
     }
+    > input {
+      max-width: 400px;
+    }
   }
   .passwordConfirm-group {
     margin-bottom: 20px;
+    > input {
+      max-width: 400px;
+    }
   }
   .agreement,
   .maillist {
