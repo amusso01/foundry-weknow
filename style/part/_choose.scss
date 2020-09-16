@@ -112,8 +112,10 @@
     column-gap: 20px;
     border-bottom: 1px solid $color__light-grey;
     position: relative;
+    transition: 0.3s;
     &:hover {
       cursor: pointer;
+      background-color: #e5f1f9;
       &::before {
         opacity: 1;
       }
@@ -130,6 +132,15 @@
       opacity: 0;
       transition: 0.3s;
     }
+    &-selected {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  .card-img {
+    display: flex;
+    align-items: center;
   }
   .card-body {
     padding: 20px 30px;
@@ -145,6 +156,10 @@
         color: #58975a;
         font-size: 12px;
         margin-left: 30px;
+        svg {
+          width: 15px;
+          height: 15px;
+        }
       }
     }
   }

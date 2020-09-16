@@ -8,10 +8,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
+    @include respond-below(sm) {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 40px;
+      margin-bottom: 30px;
+    }
   }
   .quick-menus {
     padding: 35px 3px;
     border-top: 1px solid $color__text;
+
     &__box {
       margin-bottom: 40px;
       > h3 {

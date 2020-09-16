@@ -178,4 +178,19 @@ docReady(function() {
       });
     });
   }
+
+  // CHOOSE VEHICLE
+  const vehicleCards = document.querySelectorAll(".chooseVehicle-main__card");
+
+  if (typeof vehicleCards != "undefined" && vehicleCards != null) {
+    vehicleCards.forEach(function(e) {
+      e.addEventListener("click", function(el) {
+        vehicleCards.forEach(function(card) {
+          card.classList.remove("chooseVehicle-main__card-selected");
+        });
+
+        e.classList.toggle("chooseVehicle-main__card-selected");
+      });
+    });
+  }
 });

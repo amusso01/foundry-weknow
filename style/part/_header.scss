@@ -24,6 +24,9 @@
     }
   }
 }
+header {
+  border-bottom: 1px solid $color__grey;
+}
 .header-inner {
   min-height: 85px;
   display: flex;

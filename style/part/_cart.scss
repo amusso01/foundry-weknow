@@ -19,6 +19,9 @@
   }
   .cart__order {
     margin-right: 30px;
+    @include respond-below(md) {
+      margin-right: 0px;
+    }
     > a {
       color: $color__main;
       font-size: 14px;
@@ -114,6 +117,11 @@
           path {
             stroke: $color__text;
           }
+          &:hover {
+            path {
+              fill: $color__text;
+            }
+          }
         }
       }
     }
@@ -123,6 +131,16 @@
 #upsellModal {
   .modal-body {
     padding: 10px 0px 20px;
+  }
+  .modal-img {
+    @include respond-below(sm) {
+      display: none;
+    }
+  }
+  .modal-dialog {
+    @include respond-below(sm) {
+      margin: 0px;
+    }
   }
   .product-info {
     .grey-line {
@@ -141,10 +159,16 @@
     }
     .qty__selector-module {
       margin-top: 10px;
+      @include respond-below(sm) {
+        margin-top: 6px;
+      }
     }
     .btn {
       margin-top: 20px;
       width: 100%;
+      @include respond-below(sm) {
+        margin-top: 6px;
+      }
     }
   }
 }

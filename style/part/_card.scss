@@ -1,5 +1,22 @@
 .site-card {
   max-width: 400px;
+  &__black {
+    .site-card__image {
+      > svg {
+        path {
+          stroke: $color__text;
+          &:hover {
+            fill: $color__text;
+          }
+        }
+      }
+    }
+  }
+  &__features {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+  }
   &__image {
     position: relative;
     > svg {

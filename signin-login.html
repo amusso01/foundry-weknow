@@ -241,110 +241,70 @@
       </div>
     </header>
 
-    <!-- BREADCRUMB -->
-    <section class="site-breadcrumb">
-      <div class="content-block">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Quick Links
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </section>
-
-    <main class="quick-main content-block">
-      <h2>Quick Links</h2>
-      <div class="quick-inner">
-        <div class="quick-menus">
-          <div class="quick-menus__box">
-            <h3>Orders</h3>
-            <ul>
-              <li><a href="#">Change or cancel an order</a></li>
-              <li><a href="#">Problems with your order</a></li>
-            </ul>
-          </div>
-          <div class="quick-menus__box">
-            <h3>Find in My Account</h3>
-            <ul>
-              <li><a href="#">Order History</a></li>
-              <li><a href="#">Update email address</a></li>
-              <li><a href="#">Update name, address & password</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="quick-menus">
-          <div class="quick-menus__box">
-            <h3>Click and Collect</h3>
-            <ul>
-              <li><a href="#">Our locations</a></li>
-            </ul>
-          </div>
-          <div class="quick-menus__box">
-            <h3>Returns & Refunds</h3>
-            <ul>
-              <li><a href="#">Order History</a></li>
-              <li><a href="#">Cancellation Policy</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="quick-menus">
-          <div class="quick-menus__box">
-            <h3>Prices, payments & offers</h3>
-            <ul>
-              <li><a href="#">Payment information</a></li>
-              <li><a href="#">VAT receipts</a></li>
-              <li><a href="#">Heathrow Rewards</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <section class="faq center">
-        <h2>Frequently Asked Questions</h2>
-        <div class="search-group">
-          <input
-            type="text"
-            class="search-group__input"
-            placeholder="Search for key words or ask a question"
-          />
-          <span class="search-group__btn">
-            <!-- prettier-ignore -->
-            <i class="search-group__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.004" viewBox="0 0 24 24.004">
-        <path id="Icon_awesome-search" data-name="Icon awesome-search" d="M23.674,20.753,19,16.079a1.124,1.124,0,0,0-.8-.328h-.764a9.746,9.746,0,1,0-1.688,1.688V18.2a1.124,1.124,0,0,0,.328.8l4.674,4.674a1.12,1.12,0,0,0,1.589,0l1.327-1.327A1.13,1.13,0,0,0,23.674,20.753Zm-13.923-5a6,6,0,1,1,6-6A6,6,0,0,1,9.751,15.751Z" fill="#fff"/>
-        </svg>
-        </i>
-          </span>
-        </div>
-
-        <!-- HELP SECTION -->
-        <section class="help">
-          <div class="help__inner">
-            <p class="help__title">CORONAVIRUS INFORMATION</p>
-            <p>
-              Find out what we are doing to keep you safe whilst travelling as
-              well as the latest updates and information on our
-              <a href="./coronavirus-information.html" id=""
-                >coronavirus information page</a
-              >.
-            </p>
+    <!-- MAIN -->
+    <main class="signIn-main">
+      <div class="signIn-left">
+        <section class="site-breadcrumb">
+          <div class="content-block">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Create an account
+                </li>
+              </ol>
+            </nav>
           </div>
         </section>
-      </section>
-    </main>
+        <div class="signIn-form content-block">
+          <!-- BREADCRUMB -->
 
-    <section class="quick-banner">
-      <div class="center">
-        <h2>Your Friend In The City</h2>
-        <p>
-          Our friendly staff are here to greet you when you arrive at Heathrow
-        </p>
-        <div class="btn__wrapper"><a href="#" class="btn">Our Desks</a></div>
+          <!-- FORM -->
+          <h2>Log in to your account</h2>
+
+          <form action="#">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div class="form-group remember-group">
+              <label for="remember"><input type="checkbox" />Remember me</label>
+            </div>
+            <div class="btn-wrapper">
+              <a href="#" class="btn">Log in</a>
+            </div>
+          </form>
+        </div>
+        <div class="signIn-navigation">
+          <div class="nav-box">
+            <a href="./signin-create.html">
+              <p>
+                <span><i></i></span>Sign up
+              </p>
+            </a>
+          </div>
+          <div class="nav-box">
+            <a class="active" href="./signin-login.html">
+              <p>
+                <span><i></i></span>Log in
+              </p>
+            </a>
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="signIn-right">
+        <div class="signIn-center-text">
+          <p class="h1">Search less explore more</p>
+          <p class="h2">Discover authentic experiences in London</p>
+        </div>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer class="site-footer">

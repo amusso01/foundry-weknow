@@ -1,0 +1,142 @@
+.signIn-main {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  .signIn-right {
+    background-image: url(./../images/sign-in.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    padding: 0px 50px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: $color__text;
+      opacity: 0.4;
+      z-index: 0;
+    }
+    p {
+      color: $color__bright;
+      z-index: 3;
+      position: relative;
+    }
+    .h1 {
+      font-size: 60px;
+      @include respond-below(lg) {
+        font-size: 50px;
+      }
+      @include respond-below(md) {
+        font-size: 39px;
+      }
+    }
+    .h2 {
+      @include respond-below(md) {
+        font-size: 23px;
+      }
+    }
+  }
+  .signIn-left {
+    .signIn-form {
+      margin-top: 30px;
+      > h2 {
+        margin-bottom: 30px;
+      }
+      > p {
+        color: $color__grey;
+        margin-bottom: 50px;
+      }
+    }
+    form {
+      margin-bottom: 70px;
+      .form-group-multi {
+        > div {
+          display: flex;
+          flex-direction: column;
+          width: 49%;
+          input {
+            min-height: 50px;
+            border: 1px solid $color__light-grey;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          > label {
+            font-weight: bold;
+            margin-bottom: 6px;
+          }
+          &:first-of-type {
+            margin-right: 2%;
+          }
+        }
+      }
+      .btn {
+        margin-top: 35px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .agreement {
+        > p,
+        a {
+          font-size: 14px;
+        }
+        > p {
+          color: $color__grey;
+        }
+      }
+      .remember-group {
+        label {
+          color: $color__grey;
+          font-family: $text__fontname;
+          font-weight: normal;
+        }
+      }
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+    }
+  }
+  .signIn-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .nav-box {
+      border: 1px solid $color__light-grey;
+      > a {
+        min-height: 90px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &.active {
+          p {
+            color: $color__main;
+          }
+          &::after {
+            opacity: 1;
+          }
+        }
+        &:hover {
+          p {
+            color: $color__main;
+          }
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 4px;
+          background-color: $color__main;
+          bottom: 0px;
+          left: 0px;
+          transition: 0.3s;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
