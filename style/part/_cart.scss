@@ -128,6 +128,15 @@
   }
 }
 
+.upselling__cart-cards.grid-four {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 100%;
+  row-gap: 30px;
+  @include respond-below(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 #upsellModal {
   .modal-body {
     padding: 10px 0px 20px;

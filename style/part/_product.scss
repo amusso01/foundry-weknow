@@ -113,6 +113,37 @@
         padding: 18px 20px;
         width: 100%;
       }
+
+      .radio {
+        > input[type="radio"] {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          display: none;
+          + span {
+            display: block;
+            text-align: center;
+            padding: 13px 0px;
+            border: 1px solid #d8d8d8;
+            border-radius: 5px;
+            margin-bottom: 5px;
+          }
+          &:checked {
+            + span {
+              color: $color__main;
+              border: 1px solid $color__main;
+              &::before {
+                border-color: $color__text;
+              }
+            }
+          }
+        }
+      }
+      &.multi-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6px;
+      }
     }
     .h5 {
       margin-bottom: 20px;
@@ -165,6 +196,20 @@
 
 .product-upselling {
   margin-top: 50px;
+  &.white-bucket {
+    .site-card__image {
+      > svg {
+        path {
+          stroke: $color__bright;
+        }
+        &:hover {
+          path {
+            fill: $color__bright;
+          }
+        }
+      }
+    }
+  }
 }
 
 // QUANTITY SELECTOR
@@ -243,7 +288,7 @@
         + span {
           display: block;
           text-align: center;
-          padding: 10px 0px;
+          padding: 13px 0px;
           border: 1px solid #d8d8d8;
           border-radius: 5px;
           margin-bottom: 5px;
@@ -251,7 +296,7 @@
         &:checked {
           + span {
             color: $color__main;
-
+            border: 1px solid $color__main;
             &::before {
               border-color: $color__text;
             }

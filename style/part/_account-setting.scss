@@ -51,8 +51,12 @@
   .account-body {
     width: 80%;
     margin: auto;
+    margin-top: 80px;
+    .account-settings-width {
+      max-width: 936px;
+      margin: auto;
+    }
     &__inner {
-      margin-top: 70px;
       > h2 {
         text-align: center;
         margin-bottom: 40px;
