@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- prettier-ignore -->
+    <meta name="description" content="Your Friend In The City on We Know London" />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <title>We Know London | Your Friend In The City</title>
+  </head>
+  <body>
+    <!-- Banner -->
+    <div class="site-banner">
+      <p>
+        CORONAVIRUS - WHAT WE ARE DOING TO KEEP YOU SAFE WHILST TRAVELLING -
+        <a href="./coronavirus-information.html">find out more</a>
+      </p>
+    </div>
+    <!-- Header -->
+    <header>
+      <div class="header-inner content-block">
+        <div class="header-item__logo header-item">
+          <a href="index.html"
+            ><img src="images/logo.png" alt="we know logo"
+          /></a>
+        </div>
+
+        <!-- MOBILE HAMBURGER AND MENU -->
+        <div class="header-item header-item__mobile">
+          <ul class="user-interaction">
+            <li class="nav-item">
+              <select name="currency" id="currency">
+                <option value="GBP">GBP(£)</option>
+                <option value="USD">USD($)</option>
+                <option value="EUR">EUR(€)</option>
+              </select>
+            </li>
+            <li class="nav-item">
+              <!-- prettier-ignore -->
+              <a href="./cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="20.072" height="22.939" viewBox="0 0 20.072 22.939">
+              <path id="Icon_awesome-shopping-bag" data-name="Icon awesome-shopping-bag" d="M15.771,7.169V5.735a5.735,5.735,0,1,0-11.47,0V7.169H0V19.355a3.584,3.584,0,0,0,3.584,3.584h12.9a3.584,3.584,0,0,0,3.584-3.584V7.169Zm-8.6-1.434a2.867,2.867,0,1,1,5.735,0V7.169H7.169Zm7.169,5.376a1.075,1.075,0,1,1,1.075-1.075A1.075,1.075,0,0,1,14.337,11.111Zm-8.6,0A1.075,1.075,0,1,1,6.81,10.036,1.075,1.075,0,0,1,5.735,11.111Z"/>
+              </svg></a>
+            </li>
+          </ul>
+          <div class="hamburger" id="hamburger-6">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <div id="book-menu-mobile" class="book-menu-mobile ">
+            <div class="mobile-nav-header">
+              <div class="search-group">
+                <input
+                  type="text"
+                  class="search-group__input"
+                  placeholder="What are you looking for?"
+                />
+                <span class="search-group__btn">
+                  <!-- prettier-ignore -->
+                  <i class="search-group__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.004" viewBox="0 0 24 24.004">
+                <path id="Icon_awesome-search" data-name="Icon awesome-search" d="M23.674,20.753,19,16.079a1.124,1.124,0,0,0-.8-.328h-.764a9.746,9.746,0,1,0-1.688,1.688V18.2a1.124,1.124,0,0,0,.328.8l4.674,4.674a1.12,1.12,0,0,0,1.589,0l1.327-1.327A1.13,1.13,0,0,0,23.674,20.753Zm-13.923-5a6,6,0,1,1,6-6A6,6,0,0,1,9.751,15.751Z" fill="#fff"/>
+                </svg>
+                </i>
+                </span>
+              </div>
+              <div class="icon-group">
+                <ul class="user-interaction">
+                  <li class="nav-item">
+                    <!-- prettier-ignore -->
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20.072" height="20.072" viewBox="0 0 20.072 20.072">
+                    <path id="Icon_material-account-circle" data-name="Icon material-account-circle" d="M13.036,3A10.036,10.036,0,1,0,23.072,13.036,10.04,10.04,0,0,0,13.036,3Zm0,3.011a3.011,3.011,0,1,1-3.011,3.011A3.007,3.007,0,0,1,13.036,6.011Zm0,14.251A7.226,7.226,0,0,1,7.014,17.03c.03-2,4.014-3.091,6.022-3.091s5.991,1.094,6.022,3.091a7.226,7.226,0,0,1-6.022,3.232Z" transform="translate(-3 -3)"/>
+                    </svg></a>
+                  </li>
+                  <li class="nav-item">
+                    <!-- prettier-ignore -->
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17.042" height="19.216" viewBox="0 0 17.042 19.216">
+                    <path id="Path_710" data-name="Path 710" d="M3185.374-2723.392l-8.521-5.523-8.521,5.523v-19.216h17.042Z" transform="translate(-3168.331 2742.608)" fill="#071115"/>
+                    </svg></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="book-menu-mobile__inner">
+              <div class="book-menu-mobile__item">
+                <a href="./transport.html" class="book-menu-mobile__title"
+                  >TRANSPORT</a
+                >
+                <ul class="book-menu-mobile__nav">
+                  <li>
+                    <a href="./car-transfer.html">Private Car Tranasfers</a>
+                  </li>
+                  <li>
+                    <a href="./heatrow-shuttle.html">Heathrow E-shuttle</a>
+                  </li>
+                  <li><a href="./heatrow-express.html">Heathrow Express</a></li>
+                  <li>
+                    <a href="./national-express.html">National Express</a>
+                  </li>
+                  <li><a href="./oyster.html">Visitor Oyster Card</a></li>
+                </ul>
+              </div>
+              <div class="book-menu-mobile__item">
+                <a href="./sim-card.html" class="book-menu-mobile__title"
+                  >UK SIM CARDS</a
+                >
+                <ul class="book-menu-mobile__nav">
+                  <li><a href="./EE.html">EE International</a></li>
+                  <li><a href="./three.html">3 Mobile</a></li>
+                  <li><a href="./lyca.html">Lyca Mobile</a></li>
+                </ul>
+              </div>
+              <div class="book-menu-mobile__item">
+                <a href="./bundle.html" class="book-menu-mobile__title"
+                  >BUNDLES</a
+                >
+                <ul class="book-menu-mobile__nav">
+                  <li><a href="#">Big Bus & London Pass</a></li>
+                  <li>
+                    <a href="./heatrow-three.html"
+                      >Heathrow Express & Unlimited SIM Card</a
+                    >
+                  </li>
+                  <li><a href="#">Visitor Oyster card & 12GB SIM Card</a></li>
+                  <li><a href="#">Visitor Oyster card & London Pass</a></li>
+                </ul>
+              </div>
+              <div class="btn__wrapper">
+                <a href="#" class="btn user-login">Log In / Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-item header-item__search">
+          <div class="search-group">
+            <input
+              type="text"
+              class="search-group__input"
+              placeholder="What are you looking for?"
+            />
+            <span class="search-group__btn">
+              <!-- prettier-ignore -->
+              <i class="search-group__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.004" viewBox="0 0 24 24.004">
+                <path id="Icon_awesome-search" data-name="Icon awesome-search" d="M23.674,20.753,19,16.079a1.124,1.124,0,0,0-.8-.328h-.764a9.746,9.746,0,1,0-1.688,1.688V18.2a1.124,1.124,0,0,0,.328.8l4.674,4.674a1.12,1.12,0,0,0,1.589,0l1.327-1.327A1.13,1.13,0,0,0,23.674,20.753Zm-13.923-5a6,6,0,1,1,6-6A6,6,0,0,1,9.751,15.751Z" fill="#fff"/>
+              </svg>
+              </i>
+            </span>
+          </div>
+        </div>
+        <div class="header-item header-item__nav">
+          <div id="book-menu-button" class="main-nav">
+            <p class="main-nav__control">
+              I want to book...<span>
+                <!-- prettier-ignore -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.728" height="6.364" viewBox="0 0 12.728 6.364">
+              <path id="Path_782" data-name="Path 782" d="M803.324,49.98l-6.364,6.364L790.6,49.98Z" transform="translate(-790.596 -49.98)" fill="#04141c"/>
+            </svg>
+              </span>
+            </p>
+            <div id="book-menu" class="book-menu ">
+              <div class="book-menu__inner">
+                <div class="book-menu__item">
+                  <a href="./transport.html" class="book-menu__title"
+                    >TRANSPORT</a
+                  >
+                  <ul class="book-menu__nav">
+                    <li>
+                      <a href="./car-transfer.html">Private Car Tranasfers</a>
+                    </li>
+                    <li>
+                      <a href="./heatrow-shuttle.html">Heathrow E-shuttle</a>
+                    </li>
+                    <li>
+                      <a href="./heatrow-express.html">Heathrow Express</a>
+                    </li>
+                    <li>
+                      <a href="./national-express.html">National Express</a>
+                    </li>
+                    <li><a href="./oyster.html">Visitor Oyster Card</a></li>
+                  </ul>
+                </div>
+                <div class="book-menu__item">
+                  <a href="./sim-card.html" class="book-menu__title"
+                    >UK SIM CARDS</a
+                  >
+                  <ul class="book-menu__nav">
+                    <li><a href="./EE.html">EE International</a></li>
+                    <li><a href="./three.html">3 Mobile</a></li>
+                    <li><a href="./lyca.html">Lyca Mobile</a></li>
+                  </ul>
+                </div>
+                <div class="book-menu__item">
+                  <a href="./bundle.html" class="book-menu__title">BUNDLES</a>
+                  <ul class="book-menu__nav">
+                    <li><a href="#">Big Bus & London Pass</a></li>
+                    <li>
+                      <a href="./heatrow-three.html"
+                        >Heathrow Express & Unlimited SIM Card</a
+                      >
+                    </li>
+                    <li><a href="#">Visitor Oyster card & 12GB SIM Card</a></li>
+                    <li><a href="#">Visitor Oyster card & London Pass</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-item header-item__user">
+          <ul class="user-interaction">
+            <li class="nav-item">
+              <select name="currency" id="currency">
+                <option value="GBP">GBP(£)</option>
+                <option value="USD">USD($)</option>
+                <option value="EUR">EUR(€)</option>
+              </select>
+            </li>
+            <li class="nav-item">
+              <!-- prettier-ignore -->
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20.072" height="20.072" viewBox="0 0 20.072 20.072">
+              <path id="Icon_material-account-circle" data-name="Icon material-account-circle" d="M13.036,3A10.036,10.036,0,1,0,23.072,13.036,10.04,10.04,0,0,0,13.036,3Zm0,3.011a3.011,3.011,0,1,1-3.011,3.011A3.007,3.007,0,0,1,13.036,6.011Zm0,14.251A7.226,7.226,0,0,1,7.014,17.03c.03-2,4.014-3.091,6.022-3.091s5.991,1.094,6.022,3.091a7.226,7.226,0,0,1-6.022,3.232Z" transform="translate(-3 -3)"/>
+              </svg></a>
+            </li>
+            <li class="nav-item">
+              <!-- prettier-ignore -->
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17.042" height="19.216" viewBox="0 0 17.042 19.216">
+              <path id="Path_710" data-name="Path 710" d="M3185.374-2723.392l-8.521-5.523-8.521,5.523v-19.216h17.042Z" transform="translate(-3168.331 2742.608)" fill="#071115"/>
+              </svg></a>
+            </li>
+            <li class="nav-item">
+              <!-- prettier-ignore -->
+              <a href="./cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="20.072" height="22.939" viewBox="0 0 20.072 22.939">
+              <path id="Icon_awesome-shopping-bag" data-name="Icon awesome-shopping-bag" d="M15.771,7.169V5.735a5.735,5.735,0,1,0-11.47,0V7.169H0V19.355a3.584,3.584,0,0,0,3.584,3.584h12.9a3.584,3.584,0,0,0,3.584-3.584V7.169Zm-8.6-1.434a2.867,2.867,0,1,1,5.735,0V7.169H7.169Zm7.169,5.376a1.075,1.075,0,1,1,1.075-1.075A1.075,1.075,0,0,1,14.337,11.111Zm-8.6,0A1.075,1.075,0,1,1,6.81,10.036,1.075,1.075,0,0,1,5.735,11.111Z"/>
+              </svg></a>
+            </li>
+          </ul>
+          <div class="btn__wrapper">
+            <a href="#" class="btn user-login">Log In / Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <section class="site-breadcrumb">
+      <div class="content-block">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Partner with WeKnow
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="partner-banner content-block">
+      <div class="partner-banner__body">
+        <p>
+          Our mission is to deliver <br />
+          personally tailored, <br />
+          authentic experiences with <br />
+          <span>sustainability at our core</span>
+        </p>
+        <p>
+          Want to discuss partnering with us?<a href="./contact.html">
+            Contact Us</a
+          >
+        </p>
+      </div>
+      <div class="partner-banner__image"></div>
+    </section>
+
+    <!-- PARTNER MAIN -->
+    <main class="partner-main ">
+      <div class="partner-main__inner content-block">
+        <div class="partner-nav">
+          <nav>
+            <ul>
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="">Facts & Figures</a></li>
+              <li><a href="">Integrating with us</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="partner-body">
+          <h2>Our mission</h2>
+          <p class="bold">
+            Here at WeKnow, we have one mission: to be a friend in the city,
+            delivering personally tailored, authentic experiences with
+            sustainability at our core. We’re rooted in our values and centred
+            around relationships, with both our partners and our customers.
+          </p>
+          <p>
+            Travelling can be stressful, whether for work or pleasure. We book
+            online, and then there’s no-one there to help on the other side. Now
+            that’s changing. WeKnow are here to make city trips special for
+            people around the world, starting with London. Personal,
+            hassle-free, exciting. <br />
+            <br />
+            We operate Heathrow’s travel services and information desks at
+            Arrivals in every terminal, welcoming guests to London personally
+            and connecting shops, businesses, transport and experiences to be
+            there for our customers easily and all in one place. We never rest
+            in our mission to deliver excellent customer service, and our call
+            centre is available 24/7, so whether our customers need support
+            before, during or after their stay, they can give us a call from any
+            country at any time.
+          </p>
+          <p class="sign">Your friend in the city.</p>
+        </div>
+      </div>
+      <section class="partner-icon">
+        <div class="partner-icon__inner content-block">
+          <div class="icon-card">
+            <div class="icon">
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+                <g id="Group_2776" data-name="Group 2776" transform="translate(-188 -1636)">
+                  <circle id="Ellipse_32" data-name="Ellipse 32" cx="37" cy="37" r="37" transform="translate(188 1636)" fill="#008bb2" opacity="0.4"/>
+                  <g id="Group_2733" data-name="Group 2733" transform="translate(-345.828 352.255)">
+                    <path id="Path_940" data-name="Path 940" d="M629.179,1372.58q-12.355-.008-24.709,0a2.527,2.527,0,0,0-2.741,2.733q0,7.256,0,14.513a2.57,2.57,0,0,0,2.878,2.877q6.107.005,12.215,0,6.177,0,12.354,0a2.528,2.528,0,0,0,2.741-2.733q0-7.326,0-14.653A2.527,2.527,0,0,0,629.179,1372.58Zm-9.327,14.408a7.459,7.459,0,0,1-10.408-5.7,25.5,25.5,0,0,1-.148-2.916.652.652,0,0,1,.667-.731,6.709,6.709,0,0,1,.766-.011c.9.008,1.081.161,1.047,1.054a6.676,6.676,0,0,0,1.022,4.382,4.951,4.951,0,0,0,5.419,1.905,5.051,5.051,0,0,0,3.638-4.538c.025-.65.023-1.3,0-1.952-.018-.6.282-.826.843-.855,1.593-.084,1.651-.022,1.664,1.932C624.368,1382.946,623.013,1385.526,619.852,1386.988Z" transform="translate(-38.819 -51.733)" fill="#008bb2"/>
+                    <path id="Path_941" data-name="Path 941" d="M563.426,1318.334c6.258.058,12.517.022,18.776.022.073,0,.743.01.836,0h.021v-2.29c0-.066,0-.132,0-.2v-.011h0a2.7,2.7,0,0,0-.207-.972,2.565,2.565,0,0,0-.736-.975,2.97,2.97,0,0,0-1.969-.625c-2.346.077-4.7.019-7.158.019,0-1.77.012-3.462,0-5.155a7.526,7.526,0,0,0-7.12-7.385,7.4,7.4,0,0,0-7.812,6.121,45.052,45.052,0,0,0-.171,5.5c-.007.293,0,.585,0,.923-2.464,0-4.833,0-7.2,0a2.56,2.56,0,0,0-2.851,2.833q0,9.734,0,19.467a2.559,2.559,0,0,0,2.835,2.849q4.537.008,9.074,0h.683v-.954c0-5.373.05-10.746-.027-16.118A2.8,2.8,0,0,1,563.426,1318.334Zm1.981-13.792a3.782,3.782,0,0,1,3.786,3.889q0,2.335-.012,4.67a.81.81,0,0,1-.067.185h-7.4c-.012-.239-.032-.462-.032-.685q0-2.091,0-4.182A3.782,3.782,0,0,1,565.407,1304.543Z" fill="#008bb2"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="text">
+              <p>FOUNDED IN</p>
+              <p class="bold">1971</p>
+              <p>
+                - as British Hotel Reservation Centre, the largest hotel booking
+                agent in the London area at the time.
+              </p>
+            </div>
+          </div>
+          <div class="icon-card">
+            <div class="icon">
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+                <g id="Group_2777" data-name="Group 2777" transform="translate(-740 -1636)">
+                  <circle id="Ellipse_33" data-name="Ellipse 33" cx="37" cy="37" r="37" transform="translate(740 1636)" fill="#e95d15" opacity="0.4"/>
+                  <g id="_92QOpt.tif" data-name="92QOpt.tif" transform="translate(-549.357 -12.405)">
+                    <g id="Group_2734" data-name="Group 2734" transform="translate(1309.423 1668.307)">
+                      <path id="Path_942" data-name="Path 942" d="M1333.771,1668.307a10.274,10.274,0,0,0-7.5,2.959q-2.183,2.154-4.339,4.337a10.111,10.111,0,0,0,1.1,15.465,1.1,1.1,0,0,0,1.63-.136,11.483,11.483,0,0,0,1.2-1.219,5.513,5.513,0,0,0,.821-1.468,1.283,1.283,0,0,0-.513-1.5,4.736,4.736,0,0,1-.433-7.394c1.412-1.424,2.837-2.836,4.253-4.256a4.837,4.837,0,0,1,6.626-.216,4.784,4.784,0,0,1,.424,6.605c-.326.392-.7.746-1.059,1.108a1.305,1.305,0,0,0-.343,1.342c.249,1.088.448,2.189.612,3.292a1.131,1.131,0,0,0,.663,1.023,1.081,1.081,0,0,0,1.241-.281c.949-.969,1.972-1.876,2.842-2.911a10.113,10.113,0,0,0-7.219-16.745Zm-14.522,34.04a10.255,10.255,0,0,0,7.445-2.933c1.472-1.448,2.927-2.912,4.381-4.378a10.116,10.116,0,0,0-1.13-15.466c-.4-.3-.9-.454-1.252-.115a16.167,16.167,0,0,0-2.236,2.539,1.322,1.322,0,0,0,.39,1.926,4.749,4.749,0,0,1,.437,7.361c-1.424,1.44-2.864,2.865-4.294,4.3a4.841,4.841,0,0,1-6.583.226,4.787,4.787,0,0,1-.512-6.556c.345-.426.749-.806,1.135-1.2a1.312,1.312,0,0,0,.321-1.347c-.25-1.087-.443-2.189-.606-3.293a1.114,1.114,0,0,0-.682-1.01,1.06,1.06,0,0,0-1.194.264c-.965.981-2,1.9-2.883,2.953a10.112,10.112,0,0,0,7.263,16.729Z" transform="translate(-1309.423 -1668.307)" fill="#e95d15"/>
+                      <path id="Path_943" data-name="Path 943" d="M1364.142,1668.307a10.113,10.113,0,0,1,7.219,16.745c-.87,1.035-1.893,1.942-2.841,2.911a1.081,1.081,0,0,1-1.241.281,1.131,1.131,0,0,1-.663-1.023c-.163-1.1-.363-2.2-.612-3.292a1.3,1.3,0,0,1,.343-1.342c.361-.362.733-.716,1.059-1.108a4.784,4.784,0,0,0-.425-6.605,4.837,4.837,0,0,0-6.626.216c-1.416,1.42-2.841,2.832-4.253,4.256a4.736,4.736,0,0,0,.433,7.394,1.283,1.283,0,0,1,.513,1.5,5.51,5.51,0,0,1-.821,1.468,11.483,11.483,0,0,1-1.2,1.219,1.1,1.1,0,0,1-1.63.136,10.111,10.111,0,0,1-1.1-15.465q2.162-2.176,4.339-4.337A10.274,10.274,0,0,1,1364.142,1668.307Z" transform="translate(-1339.794 -1668.307)" fill="#e95d15"/>
+                      <path id="Path_944" data-name="Path 944" d="M1319.248,1737.688a10.112,10.112,0,0,1-7.263-16.729c.883-1.05,1.919-1.971,2.883-2.953a1.061,1.061,0,0,1,1.194-.264,1.114,1.114,0,0,1,.682,1.01c.163,1.1.356,2.206.606,3.293a1.312,1.312,0,0,1-.321,1.347c-.386.392-.79.771-1.135,1.2a4.787,4.787,0,0,0,.512,6.556,4.842,4.842,0,0,0,6.583-.226c1.43-1.434,2.87-2.858,4.294-4.3a4.749,4.749,0,0,0-.437-7.361,1.322,1.322,0,0,1-.39-1.926,16.173,16.173,0,0,1,2.236-2.539c.347-.339.854-.182,1.252.115a10.116,10.116,0,0,1,1.13,15.466c-1.454,1.466-2.909,2.931-4.381,4.378A10.254,10.254,0,0,1,1319.248,1737.688Z" transform="translate(-1309.423 -1703.648)" fill="#e95d15"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="text">
+              <p>INTEGRATED PARTNERS</p>
+              <p class="bold">20+</p>
+              <p>
+                Fully integrated APIs with over 20 partners providing thousands
+                of products and experiences in London
+              </p>
+            </div>
+          </div>
+          <div class="icon-card">
+            <div class="icon">
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+                <g id="Group_2778" data-name="Group 2778" transform="translate(-1292 -1636)">
+                  <circle id="Ellipse_34" data-name="Ellipse 34" cx="37" cy="37" r="37" transform="translate(1292 1636)" fill="#572279" opacity="0.4"/>
+                  <g id="_3AQSs8.tif" data-name="3AQSs8.tif" transform="translate(-263.738 1102.56)">
+                    <g id="Group_2735" data-name="Group 2735" transform="translate(1568.235 553.265)">
+                      <path id="Path_945" data-name="Path 945" d="M1582.909,587.437c3.613,0,7.227.012,10.84,0a3.65,3.65,0,0,0,3.815-3.846c0-.768.009-1.536,0-2.3a8.774,8.774,0,0,0-7.114-8.338,5.3,5.3,0,0,0-2.651.038,12.318,12.318,0,0,1-9.741-.037,1.631,1.631,0,0,0-.577-.162,8.835,8.835,0,0,0-6.77,2.7c-2.52,2.563-2.636,5.752-2.382,9.038a2.17,2.17,0,0,0,.269.761,3.671,3.671,0,0,0,3.541,2.158Q1577.523,587.428,1582.909,587.437Zm8.556-25.631a8.551,8.551,0,1,0-8.579,8.552A8.53,8.53,0,0,0,1591.465,561.805ZM1599.916,585h5.524c2.642,0,5.284.02,7.926-.008a3.635,3.635,0,0,0,3.717-3.8,8.516,8.516,0,0,0-6.182-8.068,6.252,6.252,0,0,0-3.59-.085,9.2,9.2,0,0,1-5.208-.067c-1.846-.513-3.477.162-5.205.988C1599.961,577.089,1600.227,580.919,1599.916,585Zm12.288-21.955a7.331,7.331,0,1,0-7.325,7.315A7.316,7.316,0,0,0,1612.2,563.042Z" transform="translate(-1568.235 -553.265)" fill="#572279"/>
+                      <path id="Path_946" data-name="Path 946" d="M1582.909,639.775q-5.386,0-10.772,0a3.671,3.671,0,0,1-3.541-2.158,2.171,2.171,0,0,1-.269-.761c-.254-3.286-.138-6.475,2.382-9.038a8.835,8.835,0,0,1,6.77-2.7,1.628,1.628,0,0,1,.577.162,12.318,12.318,0,0,0,9.741.037,5.3,5.3,0,0,1,2.651-.038,8.774,8.774,0,0,1,7.114,8.338c.011.768,0,1.535,0,2.3a3.65,3.65,0,0,1-3.815,3.846C1590.136,639.787,1586.522,639.775,1582.909,639.775Z" transform="translate(-1568.235 -605.603)" fill="#572279"/>
+                      <path id="Path_947" data-name="Path 947" d="M1607.9,561.805a8.551,8.551,0,1,1-8.522-8.54A8.533,8.533,0,0,1,1607.9,561.805Z" transform="translate(-1584.669 -553.265)" fill="#572279"/>
+                      <path id="Path_948" data-name="Path 948" d="M1676.777,637.347c.312-4.078.045-7.908-3.018-11.045,1.728-.826,3.359-1.5,5.205-.988a9.2,9.2,0,0,0,5.208.067,6.252,6.252,0,0,1,3.59.085,8.516,8.516,0,0,1,6.182,8.068,3.635,3.635,0,0,1-3.717,3.8c-2.642.027-5.284.008-7.926.008Z" transform="translate(-1645.097 -605.614)" fill="#572279"/>
+                      <path id="Path_949" data-name="Path 949" d="M1690.792,569.585a7.331,7.331,0,1,1-7.3-7.337A7.319,7.319,0,0,1,1690.792,569.585Z" transform="translate(-1646.824 -559.808)" fill="#572279"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="text">
+              <p>TARGET AUDIENCE</p>
+              <p class="bold">38M</p>
+              <p>
+                Our retail desks at Heathrow and close partnerships allow us a
+                target audience of over 38 million travellers
+              </p>
+            </div>
+          </div>
+          <div class="icon-card">
+            <div class="icon">
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+                <g id="Group_2779" data-name="Group 2779" transform="translate(-465 -1904)">
+                  <circle id="Ellipse_35" data-name="Ellipse 35" cx="37" cy="37" r="37" transform="translate(465 1904)" fill="#58975a" opacity="0.4"/>
+                  <g id="Group_2736" data-name="Group 2736" transform="translate(-591.926 961.646)">
+                    <path id="Path_950" data-name="Path 950" d="M1120.353,969.233c.415,0,.757-.011,1.1,0a1.28,1.28,0,0,1,1.406,1.437c.007.789.023,1.578,0,2.366a6.041,6.041,0,0,1-3.721,5.64.945.945,0,0,0-.658,1.027q.036,4.245.007,8.49a5.917,5.917,0,0,1-4.4,5.895,6,6,0,0,1-7.532-5.683c-.023-.649,0-1.3,0-1.948,0-2.209-1.4-3.519-3.734-3.391v8.691H1080.24v-.75q0-13.292,0-26.584a4.978,4.978,0,0,1,5.145-5.207q6.124-.039,12.249,0a4.988,4.988,0,0,1,5.179,5.244q0,6.959,0,13.919v.814c.519.053,1.018.091,1.514.155a6.8,6.8,0,0,1,6,6.81c0,.673,0,1.345,0,2.018a2.175,2.175,0,1,0,4.339.049c.024-2.32.008-4.639.008-6.959a3.254,3.254,0,0,1,0-.487,2.1,2.1,0,0,0-1.345-2.5,5.67,5.67,0,0,1-3.029-5.276c-.01-.765-.006-1.531,0-2.3a1.291,1.291,0,0,1,1.446-1.468c.321-.009.643,0,1.058,0,0-1.262-.011-2.483,0-3.7a1.243,1.243,0,0,1,1.118-1.288,1.258,1.258,0,0,1,1.347.872,2.555,2.555,0,0,1,.057.688c.005,1.111,0,2.222,0,3.381h2.481c0-.939,0-1.9,0-2.865,0-.278-.011-.557,0-.835a1.256,1.256,0,0,1,1.235-1.251,1.243,1.243,0,0,1,1.285,1.268C1120.368,966.706,1120.353,967.911,1120.353,969.233Zm-29.482,7.515c-.584,2.1-1.132,4.086-1.689,6.066-.144.511-.288,1.007.327,1.321.5.257,1.008.083,1.409-.51q3.519-5.213,7.027-10.432c.512-.762.222-1.352-.707-1.419-.6-.043-1.2-.012-1.807-.012h-2.665c.3-1.315.579-2.531.846-3.749.183-.834-.117-1.243-.976-1.254-1.692-.022-3.384-.012-5.076,0a.962.962,0,0,0-1.057.951c-.352,2.5-.741,4.992-1.109,7.489-.193,1.307.026,1.552,1.356,1.553S1089.434,976.749,1090.871,976.749Z" transform="translate(-6.482 0)" fill="#58975a"/>
+                    <path id="Path_951" data-name="Path 951" d="M1084.991,1089.991q-5.984,0-11.967,0c-1.4,0-1.77-.372-1.771-1.771,0-.626-.008-1.252,0-1.879a1.264,1.264,0,0,1,1.321-1.38c.162-.01.325,0,.487,0H1097c1.5,0,1.84.345,1.84,1.841,0,.557,0,1.113,0,1.67-.006,1.066-.448,1.515-1.531,1.521-1.786.01-3.572,0-5.358,0Z" transform="translate(0 -90.67)" fill="#58975a"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="text">
+              <p>ELECTRIC MILES</p>
+              <p class="bold">28714</p>
+              <p>
+                Since the launch of our electric fleet at Heathrow in 2017, we
+                have driven 28714 miles completely carbon free
+              </p>
+            </div>
+          </div>
+          <div class="icon-card">
+            <div class="icon">
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+                <g id="Group_2780" data-name="Group 2780" transform="translate(-1015 -1904)">
+                  <circle id="Ellipse_36" data-name="Ellipse 36" cx="37" cy="37" r="37" transform="translate(1015 1904)" fill="#9f0647" opacity="0.4"/>
+                  <g id="Group_2737" data-name="Group 2737" transform="translate(-1398.203 805.465)">
+                    <path id="Path_952" data-name="Path 952" d="M2469.788,1123.56a19.158,19.158,0,0,1-1.958,6.873c-.692,1.5-1.544,2.94-2.384,4.372a.987.987,0,0,0,0,1.233,25.347,25.347,0,0,1,4.068,9.618,14.513,14.513,0,0,1,.017,4.554,6.007,6.007,0,0,1-5.223,4.764,14.1,14.1,0,0,1-7.681-1.209c-2.043-.88-3.985-2-5.937-3.081a.955.955,0,0,0-1.168.019,26,26,0,0,1-9.671,4.14,13.661,13.661,0,0,1-4.33.023c-3.054-.511-4.914-2.934-5.073-6.217a16.633,16.633,0,0,1,1.631-7.471,54.414,54.414,0,0,1,2.681-5.092,1.049,1.049,0,0,0,0-1.3,25.106,25.106,0,0,1-4.208-10.543,10.59,10.59,0,0,1,.253-4.005,5.8,5.8,0,0,1,5.078-4.339,13.807,13.807,0,0,1,7.824,1.243c2.015.883,3.933,1.991,5.864,3.053a.908.908,0,0,0,1.1-.021,28.043,28.043,0,0,1,9.663-4.182,10.454,10.454,0,0,1,5.019.132C2468.229,1116.987,2469.781,1119.38,2469.788,1123.56Zm-8.233,11.85c-.115-.176-.206-.333-.313-.476a51.632,51.632,0,0,0-10.686-10.638.619.619,0,0,0-.879-.01,52.208,52.208,0,0,0-10.745,10.69.67.67,0,0,0,.04.953,51.97,51.97,0,0,0,10.692,10.632.621.621,0,0,0,.88.011,51.764,51.764,0,0,0,10.735-10.7A5.025,5.025,0,0,0,2461.555,1135.41Zm-24.6,2.589a21.751,21.751,0,0,0-3.351,7.613,13.292,13.292,0,0,0-.194,3.7,3.05,3.05,0,0,0,2.72,2.8,8.353,8.353,0,0,0,2.321.091,21.487,21.487,0,0,0,8.958-3.57c.032-.02.032-.091.065-.193A54.042,54.042,0,0,1,2436.952,1138Zm15.645-15.684a54.453,54.453,0,0,1,10.71,10.589,22.787,22.787,0,0,0,3.6-9.129c.432-3.361-1.071-5.225-4.15-5.169C2459.016,1118.674,2455.849,1120.394,2452.6,1122.314Zm10.72,15.608a54.554,54.554,0,0,1-10.719,10.631c.856.484,1.55.945,2.3,1.285a35.912,35.912,0,0,0,4.3,1.785,13.405,13.405,0,0,0,3.82.6c2.573.008,3.947-1.424,3.924-4C2466.908,1144.42,2465.208,1141.185,2463.317,1137.922Zm-26.421-4.988a54.33,54.33,0,0,1,10.75-10.645c-1.05-.573-1.912-1.108-2.827-1.527a29.493,29.493,0,0,0-3.814-1.541,13.837,13.837,0,0,0-3.589-.6c-2.732-.061-4.18,1.388-4.137,4.11C2433.34,1126.472,2435.018,1129.667,2436.9,1132.934Z" transform="translate(0)" fill="#9f0647"/>
+                    <path id="Path_953" data-name="Path 953" d="M2487.4,1167.849a4.963,4.963,0,1,1-4.982-4.933A5.02,5.02,0,0,1,2487.4,1167.849Zm-4.933,2.048a2.064,2.064,0,1,0-2.114-2.032A2.034,2.034,0,0,0,2482.471,1169.9Z" transform="translate(-32.331 -32.411)" fill="#9f0647"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="text">
+              <p>CO2 SAVINGS</p>
+              <p class="bold">50.1 tonnes</p>
+              <p>
+                Our carbon free miles have allowed us to save a total of 50.1
+                tonnes of CO2 as of December 2020
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="img-overlapping">
+        <div class="img-overlapping__inner content-block">
+          <div class="overlapping-right">
+            <div class="img-overlapping__img img-overlapping__first">
+              <img src="./images/office.png" alt="office" />
+            </div>
+            <div class="img-overlapping__text img-overlapping__second">
+              <h2>Integrating with us</h2>
+              <p>
+                Our team of developers have 20+ years of experience with API
+                integrations, making it quick and efficient for your products
+                and services to reach our ever-growing audience.
+              </p>
+              <p class="footer-note">
+                -NOTES-
+              </p>
+              <p class="footer-note">
+                -email campaigns
+              </p>
+              <p class="footer-note">
+                -Heathrow rewards
+              </p>
+              <p class="footer-note">
+                -API creation
+              </p>
+              <p class="footer-note">
+                -API integration
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-form ">
+        <div class="contact-form__inner content-block">
+          <div class="contact-form__text">
+            <h2>Let’s work together</h2>
+            <p>
+              We’d love to hear from you if you’re interested in partnering with
+              us. Send us a message using the form opposite, or email us, and a
+              member of our team will be in touch to discuss your requirements.
+            </p>
+            <a href="mailto:info@weknowgroup.com"
+              ><span><i></i></span>info@weknowgroup.com</a
+            >
+          </div>
+          <div class="contact-form__form">
+            <form action="#">
+              <div class="form-group form-group-multi">
+                <input
+                  type="text"
+                  id="fName"
+                  name="fName"
+                  placeholder="Full name"
+                />
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="form-group form-group-multi">
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Company"
+                />
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone number"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="btn-wrapper">
+                <a href="#" class="btn">Send</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <p class="footer__nav-title">Shop</p>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a href="./transport.html">Transport</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="./sim-card.html">SIM Cards & Wifi</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="./bundle.html">Bundles</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <p class="footer__nav-title">Customer Care</p>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a href="./coronavirus-information.html"
+                >Coronavirus Information</a
+              >
+            </li>
+            <li class="footer__nav-item">
+              <a href="./quick-links.html">Quick Links & FAQs</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="./contact.html">Contact Us / Find Us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="./privacy-policy.html">Privacy Policy</a>
+            </li>
+            <li class="footer__nav-item"><a href="#">Cookie Policy</a></li>
+            <li class="footer__nav-item">
+              <a href="#">Cancellations & Refunds</a>
+            </li>
+            <li class="footer__nav-item"><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-inner">
+            <p class="footer__nav-title">Company</p>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a href="./about-us.html">About Us</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="./partner-with-us.html">Partner with WeKnow</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="./job-opportunity.html">Job Opportunities</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="footer__item-inner">
+            <p class="footer__nav-title">For Business</p>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a href="#">Business Accounts</a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-inner">
+            <p class="footer__nav-title">Account</p>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a href="account-tickets.html">Manage your account</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__item-inner">
+            <p class="footer__nav-title">Feedback</p>
+            <p class="footer__nav-text">
+              Your comments help us improve our website
+            </p>
+            <div class="btn__wrapper">
+              <a href="./feedback.html" class="btn footer__button"
+                >Leave Feedback</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copy">
+        <p>© We Know Group 2020 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>

@@ -247,409 +247,246 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-            <li class="breadcrumb-item">
-              <a href="./transport.html">Transport</a>
-            </li>
             <li class="breadcrumb-item active" aria-current="page">
-              Heathrow Express
+              Leave Feedback
             </li>
           </ol>
         </nav>
       </div>
     </section>
 
-    <!-- Main INNER PRODUCT -->
-    <main class="product-main content-block">
-      <div class="product-inner">
-        <div class="product-body">
-          <div class="product-img">
-            <img
-              class="img-fluid"
-              src="./images/express-product.jpg"
-              alt="three"
-            />
-            <img class="img-fluid" src="./images/shuttle-2.jpg" alt="three" />
-          </div>
-          <div class="product-info">
-            <h2>Heathrow Express</h2>
-            <p class="h3">£22.00 - £55.00</p>
-            <div class="grey-line"></div>
-            <p>
-              15 minute journey time from Heathrow Terminals 2 & 3 to London
-              Paddington Station, with an extra 6 minutes to Terminal 5. A free
-              transfer is available to Terminal 4 and 5.
-            </p>
-            <a href="#">Full product description</a>
-            <div class="grey-line"></div>
-
-            <form action="#">
-              <div class="product-form-group">
-                <p class="h5 select-plan">Direction of travel</p>
-
-                <label class="radio">
-                  <input type="radio" name="trip" value="oneWay" />
-                  <span>One Way</span>
-                </label>
-                <label class="radio">
-                  <input type="radio" name="trip" value="round" />
-                  <span>Round Trip</span>
-                </label>
-              </div>
-              <div class="product-form-group">
-                <p class="h5">Select your ticket</p>
-
-                <label class="radio">
-                  <input type="radio" name="ticket-type" value="standard" />
-                  <span>Standard</span>
-                </label>
-                <label class="radio">
-                  <input type="radio" name="ticket-type" value="business" />
-                  <span>Business</span>
-                </label>
-                <label class="radio">
+    <main class="feedback-main content-block">
+      <div class="feedback-inner">
+        <div class="feedback-title">
+          <h2>Leave Feedback</h2>
+          <p>Tell us what you thought about our website and services</p>
+        </div>
+        <div class="feedback-form">
+          <form>
+            <div class="form-group rating">
+              <label for="rating">Overall satisfaction of our website</label>
+              <fieldset>
+                <span class="star-cb-group">
                   <input
                     type="radio"
-                    name="ticket-type"
-                    value="standard-peak"
-                  />
-                  <span>Standard Peak</span>
-                </label>
+                    id="rating-5"
+                    name="rating"
+                    value="5"
+                  /><label for="rating-5">5</label>
+                  <input
+                    type="radio"
+                    id="rating-4"
+                    name="rating"
+                    value="4"
+                    checked="checked"
+                  /><label for="rating-4">4</label>
+                  <input
+                    type="radio"
+                    id="rating-3"
+                    name="rating"
+                    value="3"
+                  /><label for="rating-3">3</label>
+                  <input
+                    type="radio"
+                    id="rating-2"
+                    name="rating"
+                    value="2"
+                  /><label for="rating-2">2</label>
+                  <input
+                    type="radio"
+                    id="rating-1"
+                    name="rating"
+                    value="1"
+                  /><label for="rating-1">1</label>
+                  <input
+                    type="radio"
+                    id="rating-0"
+                    name="rating"
+                    value="0"
+                    class="star-cb-clear"
+                  /><label for="rating-0">0</label>
+                </span>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <label for="products"
+                >How would you rate the range of products available on our
+                website?</label
+              >
+              <div class="inline-label">
+                <label>
+                  <input name="products" value="Not sure" type="radio" />Not
+                  sure</label
+                >
+                <label>
+                  <input name="products" value="Poor" type="radio" />Poor</label
+                >
+                <label>
+                  <input name="products" value="Fair" type="radio" />Fair</label
+                >
+                <label>
+                  <input name="products" value="Good" type="radio" />Good</label
+                >
+                <label>
+                  <input name="products" value="Very Good" type="radio" />Very
+                  Good</label
+                >
+                <label>
+                  <input
+                    name="products"
+                    value="Excellent"
+                    type="radio"
+                  />Excellent</label
+                >
               </div>
-              <div class="product-form-group">
-                <p class="h5">Travel Date</p>
-                <input
-                  type="date"
-                  class="form-control"
-                  id="date"
-                  aria-describedby="date"
-                  placeholder="Select date of travel"
-                />
+            </div>
+            <div class="form-group">
+              <label for="products"
+                >How easy was it to book on our website?</label
+              >
+              <div class="inline-label">
+                <label>
+                  <input name="products" value="Not sure" type="radio" />Not
+                  sure</label
+                >
+                <label>
+                  <input name="products" value="Poor" type="radio" />Poor</label
+                >
+                <label>
+                  <input name="products" value="Fair" type="radio" />Fair</label
+                >
+                <label>
+                  <input name="products" value="Good" type="radio" />Good</label
+                >
+                <label>
+                  <input name="products" value="Very Good" type="radio" />Very
+                  Good</label
+                >
+                <label>
+                  <input
+                    name="products"
+                    value="Excellent"
+                    type="radio"
+                  />Excellent</label
+                >
               </div>
-              <div class="qty__selector-module">
-                <p class="h5">Quantity</p>
-                <div class="qty__selector-module-controls flex">
-                  <p>Adult Ticket (13 years and over)</p>
-                  <span>£22.00</span>
-                  <div class="qty-group">
-                    <button class="qty-decrease" id="decrease">&minus;</button>
-                    <input
-                      class="qtySelector"
-                      type="text"
-                      name="qtySelector"
-                      value="0"
-                      placeholder=""
-                      readonly="readonly"
-                    />
-                    <button class="qty-increase" id="increase">&plus;</button>
-                  </div>
-                </div>
-                <div class="qty__selector-module-controls flex">
-                  <p>Child Ticket (up to 13 years)</p>
-                  <span>FREE</span>
-                  <div class="qty-group">
-                    <button class="qty-decrease">&minus;</button>
-                    <input
-                      class="qtySelector"
-                      type="text"
-                      name="qtySelector"
-                      value="0"
-                      placeholder=""
-                      readonly="readonly"
-                    />
-                    <button class="qty-increase">&plus;</button>
-                  </div>
-                </div>
+            </div>
+            <div class="form-group">
+              <label for="products"
+                >How would you rate the look and feel of our website?</label
+              >
+              <div class="inline-label">
+                <label>
+                  <input name="products" value="Not sure" type="radio" />Not
+                  sure</label
+                >
+                <label>
+                  <input name="products" value="Poor" type="radio" />Poor</label
+                >
+                <label>
+                  <input name="products" value="Fair" type="radio" />Fair</label
+                >
+                <label>
+                  <input name="products" value="Good" type="radio" />Good</label
+                >
+                <label>
+                  <input name="products" value="Very Good" type="radio" />Very
+                  Good</label
+                >
+                <label>
+                  <input
+                    name="products"
+                    value="Excellent"
+                    type="radio"
+                  />Excellent</label
+                >
               </div>
+            </div>
+            <div class="form-group form-vertical">
+              <label for="hear">How did you hear about our website?</label>
+              <label>
+                <input name="hear" value="store" type="radio" />I visited your
+                store at Heathrow</label
+              >
+              <label>
+                <input name="hear" value="heathrow" type="radio" />Heathrow’s
+                website / app</label
+              >
+              <label>
+                <input name="hear" value="google" type="radio" />Through Google
+                or another online browser</label
+              >
+              <label>
+                <input name="hear" value="hotel" type="radio" />My hotel</label
+              >
+              <label>
+                <input name="hear" value="other" type="radio" />Other</label
+              >
+            </div>
+            <div class="form-group">
+              <label for="recommend"
+                >Would you recommend our website to your friends and
+                family?</label
+              >
+              <div class="inline-label">
+                <label>
+                  <input name="recommend" value="yes" type="radio" />Yes</label
+                >
+                <label>
+                  <input name="recommend" value="no" type="radio" />No</label
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="comment">Leave comments</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
 
-              <div class="grey-line"></div>
-              <div class="center">
-                <p>£22.00 - £55.00</p>
-                <p>Currently in stock online</p>
-              </div>
-              <div class="btn__wrapper">
-                <a href="#" class="btn">Add to Basket</a>
-              </div>
-              <div class="center">
-                <p>
-                  <span
-                    ><i>
-                      <!-- prettier-ignore -->
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
-                <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
-                  <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#000" stroke-width="2"/>
-                </g>
-              </svg> </i></span
-                  >Save to your bucketlist
-                </p>
-              </div>
-            </form>
-          </div>
+            <div class="form-title">
+              <p class="h3">Your information</p>
+            </div>
+
+            <div class="form-group">
+              <label for="fName">Your name <span class="blue">*</span></label>
+              <input type="text" name="fName" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input type="text" name="location" />
+            </div>
+
+            <div class="agreement">
+              <input type="checkbox" name"contacted" />
+              <p>
+                I would like to be contacted in regards to my feedback
+              </p>
+            </div>
+            <div class="agreement">
+              <input type="checkbox" name"agree-privacy" />
+              <p>
+                * I agree to WeKnow’s
+                <a href="./privacy-policy.html">Privacy Policy</a> and
+                <a href="#">Terms & Conditions</a>
+              </p>
+            </div>
+            <div class="btn__wrapper">
+              <a href="./feedback-thank-you.html" class="btn"
+                >Submit feedback</a
+              >
+            </div>
+          </form>
         </div>
       </div>
     </main>
-
-    <!-- Accordion -->
-    <section class="accordion more-info ">
-      <div class="accordion-inner content-block__small">
-        <h3>More Information</h3>
-        <dl class="badger-accordion js-accordion">
-          <dt class="badger-accordion__header">
-            <button
-              class="badger-accordion__trigger  js-badger-accordion-header"
-            >
-              <div class="badger-accordion__trigger-title ">
-                Full Description
-              </div>
-              <div class="badger-accordion__trigger-icon"></div>
-            </button>
-          </dt>
-          <dd class="badger-accordion__panel js-badger-accordion-panel">
-            <div
-              class="badger-accordion__panel-inner text-module js-badger-accordion-panel-inner"
-            >
-              <p>
-                Fusce fermentum. Donec mollis hendrerit risus. Pellentesque
-                commodo eros a enim. Ut varius tincidunt libero. Quisque
-                malesuada placerat nisl. Etiam ut purus mattis mauris sodales
-                aliquam. Phasellus ullamcorper ipsum rutrum nunc. Pellentesque
-                auctor neque nec urna. In auctor lobortis lacus. Nam ipsum
-                risus, rutrum vitae, vestibulum eu, molestie vel, lacus.
-              </p>
-              <p>
-                Suspendisse non nisl sit amet velit hendrerit rutrum. Sed
-                fringilla mauris sit amet nibh. Aenean leo ligula, porttitor eu,
-                consequat vitae, eleifend ac, enim. Pellentesque libero tortor,
-                tincidunt et, tincidunt eget, semper nec, quam. Nullam nulla
-                eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede.
-              </p>
-            </div>
-          </dd>
-          <dt class="badger-accordion__header">
-            <button
-              class="badger-accordion__trigger js-badger-accordion-header"
-            >
-              <div class="badger-accordion__trigger-title">
-                Booking Confirmation
-              </div>
-              <div class="badger-accordion__trigger-icon"></div>
-            </button>
-          </dt>
-          <dd class="badger-accordion__panel js-badger-accordion-panel">
-            <div
-              class="badger-accordion__panel-inner text-module js-badger-accordion-panel-inner"
-            >
-              <p>
-                Fusce fermentum. Donec mollis hendrerit risus. Pellentesque
-                commodo eros a enim. Ut varius tincidunt libero. Quisque
-                malesuada placerat nisl. Etiam ut purus mattis mauris sodales
-                aliquam. Phasellus ullamcorper ipsum rutrum nunc. Pellentesque
-                auctor neque nec urna. In auctor lobortis lacus. Nam ipsum
-                risus, rutrum vitae, vestibulum eu, molestie vel, lacus.
-              </p>
-              <p>
-                Suspendisse non nisl sit amet velit hendrerit rutrum. Sed
-                fringilla mauris sit amet nibh. Aenean leo ligula, porttitor eu,
-                consequat vitae, eleifend ac, enim. Pellentesque libero tortor,
-                tincidunt et, tincidunt eget, semper nec, quam. Nullam nulla
-                eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede.
-              </p>
-            </div>
-          </dd>
-          <dt class="badger-accordion__header">
-            <button
-              class="badger-accordion__trigger js-badger-accordion-header"
-            >
-              <div class="badger-accordion__trigger-title">
-                Important Information
-              </div>
-              <div class="badger-accordion__trigger-icon"></div>
-            </button>
-          </dt>
-          <dd class="badger-accordion__panel js-badger-accordion-panel">
-            <div
-              class="badger-accordion__panel-inner text-module js-badger-accordion-panel-inner"
-            >
-              <p>
-                Fusce fermentum. Donec mollis hendrerit risus. Pellentesque
-                commodo eros a enim. Ut varius tincidunt libero. Quisque
-                malesuada placerat nisl. Etiam ut purus mattis mauris sodales
-                aliquam. Phasellus ullamcorper ipsum rutrum nunc. Pellentesque
-                auctor neque nec urna. In auctor lobortis lacus. Nam ipsum
-                risus, rutrum vitae, vestibulum eu, molestie vel, lacus.
-              </p>
-              <p>
-                Suspendisse non nisl sit amet velit hendrerit rutrum. Sed
-                fringilla mauris sit amet nibh. Aenean leo ligula, porttitor eu,
-                consequat vitae, eleifend ac, enim. Pellentesque libero tortor,
-                tincidunt et, tincidunt eget, semper nec, quam. Nullam nulla
-                eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede.
-              </p>
-            </div>
-          </dd>
-          <dt class="badger-accordion__header">
-            <button
-              class="badger-accordion__trigger js-badger-accordion-header"
-            >
-              <div class="badger-accordion__trigger-title">
-                COVID-19 Compliant Transport Policy
-              </div>
-              <div class="badger-accordion__trigger-icon"></div>
-            </button>
-          </dt>
-          <dd class="badger-accordion__panel js-badger-accordion-panel">
-            <div
-              class="badger-accordion__panel-inner text-module js-badger-accordion-panel-inner"
-            >
-              <p>
-                Fusce fermentum. Donec mollis hendrerit risus. Pellentesque
-                commodo eros a enim. Ut varius tincidunt libero. Quisque
-                malesuada placerat nisl. Etiam ut purus mattis mauris sodales
-                aliquam. Phasellus ullamcorper ipsum rutrum nunc. Pellentesque
-                auctor neque nec urna. In auctor lobortis lacus. Nam ipsum
-                risus, rutrum vitae, vestibulum eu, molestie vel, lacus.
-              </p>
-              <p>
-                Suspendisse non nisl sit amet velit hendrerit rutrum. Sed
-                fringilla mauris sit amet nibh. Aenean leo ligula, porttitor eu,
-                consequat vitae, eleifend ac, enim. Pellentesque libero tortor,
-                tincidunt et, tincidunt eget, semper nec, quam. Nullam nulla
-                eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede.
-              </p>
-            </div>
-          </dd>
-        </dl>
-      </div>
-    </section>
-
-    <!-- UPSELLING SECTION -->
-    <section
-      class="upselling__cart content-block product-upselling white-bucket"
-    >
-      <div class="upselling__cart-inner">
-        <h2>Customers also viewed…</h2>
-        <div class="upselling__cart-cards grid-four">
-          <div class="travel-service__card site-card">
-            <div class="site-card__image">
-              <img
-                class="img-fluid"
-                src="./images/car.png"
-                alt="car transfer"
-              />
-              <!-- prettier-ignore -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
-           <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
-             <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#fff" stroke-width="2"/>
-           </g>
-         </svg>
-            </div>
-            <div class="site-card__body">
-              <h3>Private Car Tranasfer</h3>
-              <div class="site-card__features">
-                <p>
-                  – Fully Electric, COVID Compliant transport
-                </p>
-              </div>
-              <div class="site-card__price">
-                <p>
-                  Enter location details for a quick quote
-                </p>
-              </div>
-              <div class="site-card__cta">
-                <a href="./car-transfer.html">Book a ride</a>
-              </div>
-            </div>
-          </div>
-          <!-- .site-card  -->
-
-          <div class="travel-service__card site-card">
-            <div class="site-card__image">
-              <img src="./images/marriot.jpg" alt="Heathrow E-shuttle" />
-              <!-- prettier-ignore -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
-             <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
-               <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#fff" stroke-width="2"/>
-             </g>
-           </svg>
-            </div>
-            <div class="site-card__body">
-              <h3>Heathrow E-shuttle</h3>
-              <div class="site-card__features">
-                <p>
-                  – Electric shuttle service to local hotels
-                </p>
-              </div>
-              <div class="site-card__price">
-                <p>
-                  £9.99 - £14.99
-                </p>
-              </div>
-              <div class="site-card__cta">
-                <a href="./heatrow-shuttle.html">Book a ride</a>
-              </div>
-            </div>
-          </div>
-          <!-- .site-card  -->
-
-          <div class="travel-service__card site-card">
-            <div class="site-card__image">
-              <img src="./images/train.jpg" alt="Heathrow Express" />
-              <!-- prettier-ignore -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
-             <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
-               <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#fff" stroke-width="2"/>
-             </g>
-           </svg>
-            </div>
-            <div class="site-card__body">
-              <h3>Heathrow Express</h3>
-              <div class="site-card__features">
-                <p>
-                  – Heathrow to Paddington in 15 minutes
-                </p>
-              </div>
-              <div class="site-card__price">
-                <p>
-                  £22.00 - £55.00
-                </p>
-              </div>
-              <div class="site-card__cta">
-                <a href="./heatrow-express.html">Buy tickets</a>
-              </div>
-            </div>
-          </div>
-          <!-- .site-card  -->
-
-          <div class="travel-service__card site-card">
-            <div class="site-card__image">
-              <img src="./images/nationalExpress.jpg" alt="National Express" />
-              <!-- prettier-ignore -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="24.173" height="27.84" viewBox="0 0 24.173 27.84">
-             <g id="Group_2444" data-name="Group 2444" transform="translate(-1343 -189)">
-               <path id="Path_710" data-name="Path 710" d="M3190.5-2717.608l-11.086-7.186-11.086,7.186v-25H3190.5Z" transform="translate(-1824.331 2932.608)" fill="none" stroke="#fff" stroke-width="2"/>
-             </g>
-           </svg>
-            </div>
-            <div class="site-card__body">
-              <h3>National Express</h3>
-              <div class="site-card__features">
-                <p>
-                  – Coach from Heathrow to Gatwick
-                </p>
-              </div>
-              <div class="site-card__price">
-                <p>
-                  £25.00
-                </p>
-              </div>
-              <div class="site-card__cta">
-                <a href="./national-express.html">Buy tickets</a>
-              </div>
-            </div>
-          </div>
-          <!-- .site-card  -->
-        </div>
-      </div>
-    </section>
 
     <!-- Footer -->
     <footer class="site-footer">
@@ -745,7 +582,6 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="./js/badger-accordion.min.js"></script>
     <script type="text/javascript" src="./app.js"></script>
   </body>
 </html>

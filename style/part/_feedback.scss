@@ -1,0 +1,137 @@
+.feedback-inner {
+  max-width: 936px;
+  margin: auto;
+  margin-top: 30px;
+}
+.feedback-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+// start group
+$unchecked-star: "\2606";
+$unchecked-color: #888;
+$checked-star: "\2605";
+$checked-color: #e52;
+
+.feedback-form {
+  margin-bottom: 80px;
+  .rating {
+    fieldset {
+      border: none;
+    }
+    .star-cb-group {
+      /* remove inline-block whitespace */
+      font-size: 0;
+      * {
+        font-size: 1rem;
+      }
+      /* flip the order so we can use the + and ~ combinators */
+      unicode-bidi: bidi-override;
+      direction: rtl;
+      & > input {
+        display: none;
+        & + label {
+          /* only enough room for the star */
+          display: inline-block;
+          overflow: hidden;
+          text-indent: 9999px;
+          width: 1em;
+          font-size: 25px;
+          margin-right: 4px;
+          white-space: nowrap;
+          cursor: pointer;
+          &:before {
+            display: inline-block;
+            text-indent: -9999px;
+            content: $unchecked-star;
+            color: $unchecked-color;
+          }
+        }
+        &:checked ~ label:before,
+        & + label:hover ~ label:before,
+        & + label:hover:before {
+          content: $checked-star;
+          color: #e52;
+          text-shadow: 0 0 1px #333;
+        }
+      }
+
+      /* the hidden clearer */
+      & > .star-cb-clear + label {
+        text-indent: -9999px;
+        width: 0.5em;
+        margin-left: -0.5em;
+      }
+      & > .star-cb-clear + label:before {
+        width: 0.5em;
+      }
+
+      &:hover > input + label:before {
+        content: $unchecked-star;
+        color: $unchecked-color;
+        text-shadow: none;
+      }
+      &:hover > input + label:hover ~ label:before,
+      &:hover > input + label:hover:before {
+        content: $checked-star;
+        color: $checked-color;
+        text-shadow: 0 0 1px #333;
+      }
+    }
+  }
+  .form-group {
+    margin-bottom: 30px;
+    .inline-label {
+      > label {
+        margin: 0px 10px 0px 0px;
+        input {
+          margin-right: 4px;
+        }
+      }
+    }
+    textarea {
+      border-color: $color__light-grey;
+      border-radius: 5px;
+    }
+  }
+  .form-title {
+    margin: 40px 0px;
+    .h3 {
+      font-family: $text__fontname;
+    }
+  }
+  .form-vertical {
+    > label {
+      &:not(:first-of-type) {
+        font-family: $text__fontname;
+        font-weight: normal;
+      }
+      input {
+        margin-right: 8px;
+      }
+    }
+  }
+  .btn {
+    min-width: 200px;
+    margin-top: 20px;
+  }
+  .agreement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    p {
+      font-size: 14px;
+      margin-left: 8px;
+    }
+    a {
+      font-size: 14px;
+      text-decoration: underline;
+    }
+  }
+}

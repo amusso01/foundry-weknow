@@ -88,6 +88,7 @@ input[type="text"]:active,
 input[type="text"]:focus,
 input[type="search"],
 input[type="search"]:focus,
+input[type="file"],
 input[type="search"]:active {
   outline: 0px !important;
   -webkit-appearance: none;

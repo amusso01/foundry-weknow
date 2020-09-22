@@ -1,0 +1,31 @@
+.img-overlapping {
+  position: relative;
+  .overlapping-right {
+    .img-overlapping__text {
+      bottom: 0px;
+      right: 0px;
+    }
+  }
+  &__text {
+    position: absolute;
+    background-color: $color__bright;
+    width: 66%;
+    padding: 50px 40px;
+    h2 {
+      margin-bottom: 25px;
+    }
+    > p {
+      font-size: 21px;
+      margin-bottom: 20px;
+      padding-right: 30px;
+      &.footer-note {
+        color: $color__grey;
+        font-size: 16px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+  &__img {
+    width: 66%;
+  }
+}

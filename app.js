@@ -193,4 +193,15 @@ docReady(function() {
       });
     });
   }
+
+  // UPLOAD FILE
+  let cv = document.querySelector("#cv");
+  let labelCV = document.querySelector(".cv-label");
+  if (typeof cv != "undefined" && cv != null) {
+    cv.addEventListener("change", function() {
+      let filename = this.files.item(0).name;
+      labelCV.innerHTML = filename;
+      labelCV.style.color = "#04141C";
+    });
+  }
 });

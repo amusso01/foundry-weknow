@@ -1,0 +1,100 @@
+.account-main {
+  .account-body-details {
+    margin-top: 0px;
+  }
+}
+.account-details {
+  .thankYou-details {
+    max-width: 800px;
+    margin: auto;
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .btn {
+        color: $color__text;
+        background-color: transparent;
+        border: 1px solid $color__text;
+        min-width: 175px;
+        &:hover {
+          color: $color__bright;
+          background-color: $color__text;
+        }
+      }
+    }
+    &__recap {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0px;
+      border-top: 1px solid $color__light-grey;
+      border-bottom: 1px solid $color__light-grey;
+      .order-recap {
+        p {
+          margin-bottom: 7px;
+          &:first-of-type {
+            color: $color__grey;
+          }
+        }
+      }
+    }
+  }
+  .cart__order {
+    margin-top: 30px;
+    > a {
+      color: $color__main;
+      font-size: 14px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &-inner {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      column-gap: 30px;
+      padding: 10px 0px;
+      border-bottom: 1px solid $color__light-grey;
+      margin-bottom: 10px;
+    }
+    &-info {
+      > p {
+        margin-bottom: 16px;
+      }
+    }
+    .journey {
+      margin-bottom: 16px;
+      > p {
+        margin-bottom: 1px;
+        > span {
+          color: $color__grey;
+        }
+      }
+    }
+  }
+  .tot-recap {
+    max-width: 400px;
+    margin-left: auto;
+    border-bottom: 1px solid $color__light-grey;
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    .grey-line {
+      margin: 10px 0px;
+    }
+    p {
+      color: $color__grey;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      &:last-of-type {
+        color: $color__text;
+      }
+      > span {
+        color: $color__text;
+      }
+    }
+  }
+  .thankYou-info {
+    background-color: transparent;
+    margin-bottom: 50px;
+  }
+}
