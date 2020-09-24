@@ -204,4 +204,12 @@ docReady(function() {
       labelCV.style.color = "#04141C";
     });
   }
+
+  // ACCOUNT MENU
+  const accountBurger = document.getElementById("account-burger");
+  const accountMenu = document.getElementById("account-menu");
+  accountBurger.addEventListener("click", function(e) {
+    e.preventDefault;
+    accountMenu.classList.toggle("open");
+  });
 });

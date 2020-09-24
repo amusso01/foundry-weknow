@@ -16,6 +16,9 @@
       &:after {
         content: "|";
         margin: 0px 5px;
+        @include respond-below(xs) {
+          display: none;
+        }
       }
       &:last-of-type {
         &::after {
@@ -30,11 +33,18 @@
     justify-content: space-between;
     > img {
       max-width: 220px;
+      @include respond-below(xs) {
+        display: none;
+      }
     }
     .btn-wrapper {
       align-self: flex-end;
+
       .btn {
         min-width: 250px;
+        @include respond-below(xs) {
+          min-width: 100%;
+        }
       }
     }
   }

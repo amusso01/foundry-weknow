@@ -38,6 +38,9 @@
         font-size: 27px;
         font-weight: bold;
         color: $color__text;
+        @include respond-below(sm) {
+          font-size: 21px;
+        }
       }
     }
   }
@@ -57,6 +60,7 @@
     .btn {
       background-color: $color__main;
       max-width: 170px;
+
       &:hover {
         border: none;
         color: $color__bright;

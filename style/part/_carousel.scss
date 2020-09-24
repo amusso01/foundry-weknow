@@ -1,6 +1,9 @@
 .quote-carousel {
   background-color: #e5f1f9;
   padding: 80px 30px;
+  @include respond-below(sm) {
+    // display: none;
+  }
 
   &__inner {
     > h2 {
@@ -14,8 +17,11 @@
     background-color: $color__bright;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 5px;
-    padding: 60px 30px;
+    padding: 45px 30px;
     margin: auto;
+    @include respond-below(sm) {
+      padding: 25px 10px;
+    }
   }
   .swiper-slide {
     background: #fff;
@@ -27,18 +33,30 @@
     flex-direction: column;
     padding: 10px 30px 10px 15px;
     height: 100%;
+    @include respond-below(sm) {
+      padding: 10px 10px 10px 11px;
+    }
     .carousel-body {
       font-size: 21px;
+      @include respond-below(sm) {
+        font-size: 18px;
+      }
     }
     .carousel-footer {
       display: flex;
       align-items: center;
-      margin-top: 50px;
+      margin-top: 35px;
+      @include respond-below(sm) {
+        margin-top: 10px;
+      }
       > img {
         width: 60px;
         height: 60px;
         border-radius: 50%;
         margin-right: 30px;
+        @include respond-below(sm) {
+          display: none;
+        }
       }
       .carousel-footer__name {
         > p {

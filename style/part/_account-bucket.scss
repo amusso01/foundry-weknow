@@ -10,11 +10,15 @@
   }
   @include respond-below(sm) {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 .account-bucket__navigation {
   max-width: 800px;
   margin: auto;
+  > nav {
+    padding: 0px;
+  }
   ul {
     background-color: $color__light-grey;
     list-style: none;
@@ -23,6 +27,7 @@
     margin-bottom: 60px;
     > li {
       width: 100%;
+      margin-bottom: 0px !important;
     }
     a {
       width: 100%;
@@ -31,10 +36,27 @@
       justify-content: center;
       min-height: 65px;
       position: relative;
+      span {
+        margin-right: 7px;
+        svg {
+          width: 20px;
+          height: 20px;
+          top: 2px;
+          position: relative;
+        }
+        @include respond-below(md) {
+          display: none;
+        }
+      }
       &.current {
         p {
           color: $color__text;
           font-weight: bold;
+          svg {
+            path {
+              fill: $color__main;
+            }
+          }
         }
         &::after {
           opacity: 1;

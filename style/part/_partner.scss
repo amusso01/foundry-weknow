@@ -2,17 +2,57 @@
 .partner-banner {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
+  @include respond-below(md) {
+    grid-template-columns: 1fr;
+  }
   &__body {
     background-color: $color__main;
     padding: 90px 50px;
+    position: relative;
+    @include respond-below(md) {
+      background-image: url(./../images/partner-banner.png);
+      background-size: cover;
+      z-index: 3;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: $color__main;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        z-index: 0;
+      }
+    }
+    @include respond-below(sm) {
+      padding: 40px 10px;
+    }
     > p {
+      position: relative;
+      z-index: 3;
       color: $color__bright;
       &:first-of-type {
         font-size: 40px;
         line-height: 46px;
         margin-bottom: 60px;
+        @include respond-below(sm) {
+          margin-bottom: 40px;
+          font-size: 30px;
+          line-height: 34px;
+        }
         > span {
           color: $color__text;
+        }
+      }
+      &.inverted {
+        color: $color__text;
+        > a {
+          color: $color__bright;
+          &:hover {
+            color: $color__bright;
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -20,21 +60,38 @@
   &__image {
     background-image: url(./../images/partner-banner.png);
     background-size: cover;
+    @include respond-below(md) {
+      display: none;
+    }
   }
 }
 // main
 .partner-main__inner {
   padding-left: 200px;
   margin-bottom: 70px;
+  @include respond-below(md) {
+    padding-left: 0px;
+  }
   .partner-nav {
     background-color: $color__hover;
     margin-bottom: 50px;
+    @include respond-below(md) {
+      margin-bottom: 30px;
+    }
+
     ul {
       list-style: none;
       display: flex;
       justify-content: space-evenly;
+      flex-wrap: wrap;
+      @include respond-below(sm) {
+        padding-top: 17px;
+      }
       > li {
         padding: 32px 0px;
+        @include respond-below(sm) {
+          padding: 17px 0px;
+        }
         a {
           color: $color__bright;
           &:hover {
@@ -83,8 +140,21 @@
       width: 33%;
       display: flex;
       align-items: flex-start;
+      @include respond-below(md) {
+        width: 50%;
+      }
+      @include respond-below(sm) {
+        flex-direction: column;
+        margin-bottom: 40px;
+      }
+      @include respond-below(xs) {
+        width: 100%;
+      }
       .icon {
         margin-right: 20px;
+        @include respond-below(sm) {
+          margin-bottom: 10px;
+        }
       }
       .text {
         > p {
@@ -98,6 +168,7 @@
           font-weight: bold;
           font-family: $header__fontname;
           margin-bottom: 15px;
+          font-size: 23px;
         }
       }
     }
@@ -109,31 +180,99 @@
   margin-bottom: 50px;
   .img-overlapping {
     margin-bottom: 100px;
+
+    .img-overlapping__img {
+      @include respond-below(sm) {
+        width: 100%;
+      }
+    }
+    .img-overlapping__text {
+      padding-right: 280px;
+      @include respond-below(lg) {
+        padding-right: 120px;
+      }
+      @include respond-below(md) {
+        padding-right: 0px;
+        padding: 15px 30px;
+        h2 {
+          margin-bottom: 10px;
+          font-size: 26px;
+        }
+        > p {
+          font-size: 16px;
+        }
+        .footer-note {
+          font-size: 14px;
+        }
+      }
+      @include respond-below(sm) {
+        padding-left: 15px;
+        padding-right: 15px;
+        left: 0px;
+        width: 100%;
+        h2 {
+          font-size: 23px;
+        }
+        > p {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 }
 
 // form
+
+.partner-main {
+  .form-group-multi {
+    @include respond-below(sm) {
+      flex-direction: column;
+      > input {
+        &:first-of-type {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
 .contact-form {
   &__inner {
     display: grid;
     grid-template-columns: 1.2fr 2fr;
     column-gap: 40px;
+    @include respond-below(md) {
+      grid-template-columns: 1fr;
+    }
   }
   &__text {
     background-color: #fbfbfb;
     padding: 70px 50px;
+    @include respond-below(md) {
+      padding: 50px;
+    }
     > h2 {
       margin-bottom: 40px;
       font-size: 30px;
+      @include respond-below(md) {
+        font-size: 23px;
+        margin-bottom: 25px;
+      }
     }
     > p {
       color: $color__grey;
       line-height: 28px;
       margin-bottom: 40px;
       font-size: 21px;
+      @include respond-below(md) {
+        font-size: 18px;
+      }
     }
     a {
       font-size: 21px;
+      @include respond-below(md) {
+        font-size: 18px;
+      }
       &:hover {
         text-decoration: underline;
         color: $color__text;

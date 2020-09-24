@@ -16,7 +16,6 @@
     }
     .btn__wrapper {
       margin-top: 30px;
-      text-decoration: underline;
     }
   }
   .search-item {
@@ -64,6 +63,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+    }
+  }
+  a {
+    color: $color__main;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

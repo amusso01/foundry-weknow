@@ -11,6 +11,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @include respond-below(sm) {
+        flex-direction: column;
+      }
       .btn {
         color: $color__text;
         background-color: transparent;
