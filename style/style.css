@@ -491,6 +491,18 @@ h3,
   border-top: 1px solid #eaecee;
 }
 
+.badger-accordion__header > button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .badger-accordion__trigger {
   -ms-flex-line-pack: justify;
       align-content: space-between;
@@ -537,41 +549,15 @@ h3,
   font-size: 17px;
 }
 
-.badger-accordion__trigger-icon {
-  display: block;
-  height: 26px;
-  margin-left: auto;
+.badger-accordion__icon > svg {
+  width: 10px;
+  height: 10px;
   position: relative;
-  -webkit-transition: all ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s;
-  width: 16px;
+  top: 1px;
 }
 
-.badger-accordion__trigger-icon:after, .badger-accordion__trigger-icon:before {
-  background-color: #04141c;
-  content: "";
-  height: 3px;
-  position: absolute;
-  top: 0px;
-  -webkit-transition: all ease-in-out 0.13333s;
-  transition: all ease-in-out 0.13333s;
-  width: 16px;
-}
-
-.badger-accordion__trigger-icon:before {
-  left: 2px;
-  -webkit-transform: rotate(45deg) translate3d(8px, 22px, 0);
-          transform: rotate(45deg) translate3d(8px, 22px, 0);
-  -webkit-transform-origin: 100%;
-          transform-origin: 100%;
-}
-
-.badger-accordion__trigger-icon:after {
-  -webkit-transform: rotate(-45deg) translate3d(-8px, 22px, 0);
-          transform: rotate(-45deg) translate3d(-8px, 22px, 0);
-  right: 3px;
-  -webkit-transform-origin: 0;
-          transform-origin: 0;
+.badger-accordion__icon > svg path {
+  fill: #04141c;
 }
 
 .badger-accordion__panel {
@@ -868,6 +854,11 @@ header {
   display: block;
 }
 
+.main-nav .book-menu__image {
+  margin-top: 30px;
+  grid-column: 1/-1;
+}
+
 .main-nav .book-menu__nav > li {
   margin-bottom: 10px;
 }
@@ -1057,21 +1048,21 @@ header {
   position: relative;
 }
 
-.site-card__image > svg {
+.site-card__image svg {
   position: absolute;
   top: 10px;
   right: 5px;
 }
 
-.site-card__image > svg:hover {
+.site-card__image svg:hover {
   cursor: pointer;
 }
 
-.site-card__image > svg:hover path {
+.site-card__image svg:hover path {
   fill: #ffffff;
 }
 
-.site-card__image-sim > svg:hover path {
+.site-card__image-sim svg:hover path {
   fill: #04141c;
 }
 
@@ -1146,22 +1137,26 @@ header {
   color: #00a6d3;
 }
 
-.shop__inner label {
+.shop__inner label,
+.agreement label {
   margin-bottom: 10px;
   display: block;
   font-size: 14px;
 }
 
-.shop__inner label:hover span {
+.shop__inner label:hover span,
+.agreement label:hover span {
   color: #04141c;
   cursor: pointer;
 }
 
-.shop__inner label input {
+.shop__inner label input,
+.agreement label input {
   display: none;
 }
 
-.shop__inner label input + span {
+.shop__inner label input + span,
+.agreement label input + span {
   position: relative;
   display: inline-block;
   line-height: 18px;
@@ -1170,7 +1165,8 @@ header {
   transition: color 0.1s ease-in-out;
 }
 
-.shop__inner label input + span::before {
+.shop__inner label input + span::before,
+.agreement label input + span::before {
   content: "";
   display: block;
   float: left;
@@ -1185,22 +1181,26 @@ header {
   border-radius: 3px;
 }
 
-.shop__inner label input + span:active::before {
+.shop__inner label input + span:active::before,
+.agreement label input + span:active::before {
   -webkit-transition: none;
   transition: none;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 
-.shop__inner label input:checked + span {
+.shop__inner label input:checked + span,
+.agreement label input:checked + span {
   color: #00a6d3;
 }
 
-.shop__inner label input:checked + span::before {
+.shop__inner label input:checked + span::before,
+.agreement label input:checked + span::before {
   border-color: #04141c;
 }
 
-.shop__inner label input:checked + span::after {
+.shop__inner label input:checked + span::after,
+.agreement label input:checked + span::after {
   position: absolute;
   content: "";
   top: -4px;
@@ -1216,6 +1216,10 @@ header {
           transform: rotate(45deg);
   -webkit-animation: tick 0.1s 0.1s ease backwards;
           animation: tick 0.1s 0.1s ease backwards;
+}
+
+.agreement label input:checked + span {
+  color: #778591;
 }
 
 @-webkit-keyframes tick {
@@ -3127,6 +3131,17 @@ ol.breadcrumb li a:hover {
   border-top: 1px solid #eaecee;
   border-bottom: 1px solid #eaecee;
   margin-bottom: 10px;
+  position: relative;
+}
+
+.cart-main .cart__order .bin-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.cart-main .cart__order .bin-icon:hover {
+  cursor: pointer;
 }
 
 .cart-main .cart__order-info > p {
@@ -3597,25 +3612,33 @@ ol.breadcrumb li a:hover {
   margin-bottom: 10px;
 }
 
-.finalCheckout-main .customer-details .checkout-card {
+.finalCheckout-main .customer-details .checkout-card,
+.finalCheckout-main .customer-details .checkout-promotion,
+.finalCheckout-main .customer-details .checkout-rewards {
   border: 1px solid #eaecee;
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 10px;
 }
 
-.finalCheckout-main .customer-details .checkout-card:hover {
+.finalCheckout-main .customer-details .checkout-card:hover,
+.finalCheckout-main .customer-details .checkout-promotion:hover,
+.finalCheckout-main .customer-details .checkout-rewards:hover {
   cursor: pointer;
 }
 
-.finalCheckout-main .customer-details .checkout-card > p {
+.finalCheckout-main .customer-details .checkout-card > p,
+.finalCheckout-main .customer-details .checkout-promotion > p,
+.finalCheckout-main .customer-details .checkout-rewards > p {
   color: #778591;
   font-size: 14px;
   padding-left: 25px;
   margin-top: 6px;
 }
 
-.finalCheckout-main .customer-details .checkout-card .checkout-radio > p {
+.finalCheckout-main .customer-details .checkout-card .checkout-radio > p,
+.finalCheckout-main .customer-details .checkout-promotion .checkout-radio > p,
+.finalCheckout-main .customer-details .checkout-rewards .checkout-radio > p {
   position: relative;
   padding-left: 25px;
   display: -webkit-box;
@@ -3629,7 +3652,9 @@ ol.breadcrumb li a:hover {
           justify-content: space-between;
 }
 
-.finalCheckout-main .customer-details .checkout-card .checkout-radio > p::before {
+.finalCheckout-main .customer-details .checkout-card .checkout-radio > p::before,
+.finalCheckout-main .customer-details .checkout-promotion .checkout-radio > p::before,
+.finalCheckout-main .customer-details .checkout-rewards .checkout-radio > p::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -3642,7 +3667,9 @@ ol.breadcrumb li a:hover {
   border-radius: 10px;
 }
 
-.finalCheckout-main .customer-details .checkout-card .checkout-radio > p:after {
+.finalCheckout-main .customer-details .checkout-card .checkout-radio > p:after,
+.finalCheckout-main .customer-details .checkout-promotion .checkout-radio > p:after,
+.finalCheckout-main .customer-details .checkout-rewards .checkout-radio > p:after {
   position: absolute;
   content: "";
   background-color: #eaecee;
@@ -3657,11 +3684,15 @@ ol.breadcrumb li a:hover {
   transition: 0.3s;
 }
 
-.finalCheckout-main .customer-details .checkout-card .checkout-radio > p img {
+.finalCheckout-main .customer-details .checkout-card .checkout-radio > p img,
+.finalCheckout-main .customer-details .checkout-promotion .checkout-radio > p img,
+.finalCheckout-main .customer-details .checkout-rewards .checkout-radio > p img {
   width: 86px;
 }
 
-.finalCheckout-main .customer-details .checkout-card-active .checkout-radio > p::after {
+.finalCheckout-main .customer-details .checkout-card-active .checkout-radio > p::after,
+.finalCheckout-main .customer-details .checkout-promotion-active .checkout-radio > p::after,
+.finalCheckout-main .customer-details .checkout-rewards-active .checkout-radio > p::after {
   background-color: #00a6d3;
 }
 
@@ -4223,8 +4254,8 @@ ol.breadcrumb li a:hover {
 
 .chooseVehicle-main .booking-passengers span svg,
 .chooseVehicle-main .booking-luggage span svg {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
 }
 
 .chooseVehicle-main .booking-passengers .choose-qty,
@@ -4257,6 +4288,12 @@ ol.breadcrumb li a:hover {
 .chooseVehicle-main .booking-passengers .choose-qty > span:hover,
 .chooseVehicle-main .booking-luggage .choose-qty > span:hover {
   cursor: pointer;
+}
+
+.chooseVehicle-main .booking-passengers .choose-qty > span svg,
+.chooseVehicle-main .booking-luggage .choose-qty > span svg {
+  width: 18px;
+  height: 18px;
 }
 
 .chooseVehicle-main .chooseVehicle-main__selection {
@@ -4846,7 +4883,6 @@ ol.breadcrumb li a:hover {
 
 .product-info > form > .radio > input[type="radio"]:checked + span {
   color: #00a6d3;
-  border: 1px solid #00a6d3;
 }
 
 .product-info > form > .radio > input[type="radio"]:checked + span::before {

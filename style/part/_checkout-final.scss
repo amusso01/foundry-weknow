@@ -37,7 +37,9 @@
         margin-bottom: 10px;
       }
     }
-    .checkout-card {
+    .checkout-card,
+    .checkout-promotion,
+    .checkout-rewards {
       border: 1px solid $color__light-grey;
       border-radius: 5px;
       padding: 15px;

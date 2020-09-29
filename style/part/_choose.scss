@@ -81,8 +81,8 @@
   .booking-luggage {
     span {
       svg {
-        width: 14px;
-        height: 14px;
+        width: 15px;
+        height: 15px;
       }
     }
     .choose-qty {
@@ -97,6 +97,10 @@
         margin-right: 6px;
         &:hover {
           cursor: pointer;
+        }
+        svg {
+          width: 18px;
+          height: 18px;
         }
       }
     }

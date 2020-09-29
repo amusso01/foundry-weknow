@@ -89,9 +89,27 @@ docReady(function() {
 
   // SIGN IN
   var signInCard = document.querySelectorAll(".checkout-card");
+  var promoCode = document.querySelector(".checkout-promotion");
+  var rewardsCode = document.querySelector(".checkout-rewards");
   var guestCheck = document.querySelector(".guest-checkout");
   var signinCheck = document.querySelector(".signin-checkout");
   var creditCheck = document.querySelector(".creditCard-checkout");
+  var promotionCheck = document.querySelector(".promotion-checkout");
+  var rewardsCheck = document.querySelector(".rewards-checkout");
+
+  if (typeof rewardsCode != "undefined" && rewardsCode != null) {
+    rewardsCode.addEventListener("click", function(e) {
+      rewardsCode.classList.toggle("checkout-promotion-active");
+      rewardsCheck.classList.toggle("checkout-hide-open");
+    });
+  }
+  if (typeof promoCode != "undefined" && promoCode != null) {
+    promoCode.addEventListener("click", function(e) {
+      promoCode.classList.toggle("checkout-promotion-active");
+      promotionCheck.classList.toggle("checkout-hide-open");
+    });
+  }
+
   if (typeof signInCard != "undefined" && signInCard != null) {
     signInCard.forEach(function(e) {
       e.addEventListener("click", function(el) {
@@ -117,6 +135,7 @@ docReady(function() {
       });
     });
   }
+
   if (typeof creditCheck != "undefined" && creditCheck != null) {
     signInCard.forEach(function(e) {
       e.addEventListener("click", function(el) {
@@ -179,6 +198,19 @@ docReady(function() {
     });
   }
 
+  // CLEAR FILTER
+  const clear = document.getElementById("clear-field");
+  var fields = document.querySelectorAll(".shop__form > form label input");
+  clear.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    fields.forEach(element => {
+      if (element.checked === true) {
+        element.checked = false;
+      }
+    });
+  });
+
   // CHOOSE VEHICLE
   const vehicleCards = document.querySelectorAll(".chooseVehicle-main__card");
 
@@ -208,8 +240,10 @@ docReady(function() {
   // ACCOUNT MENU
   const accountBurger = document.getElementById("account-burger");
   const accountMenu = document.getElementById("account-menu");
-  accountBurger.addEventListener("click", function(e) {
-    e.preventDefault;
-    accountMenu.classList.toggle("open");
-  });
+  if (typeof accountBurger != "undefined" && accountBurger != null) {
+    accountBurger.addEventListener("click", function(e) {
+      e.preventDefault;
+      accountMenu.classList.toggle("open");
+    });
+  }
 });

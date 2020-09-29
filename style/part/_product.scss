@@ -296,7 +296,6 @@
         &:checked {
           + span {
             color: $color__main;
-            border: 1px solid $color__main;
             &::before {
               border-color: $color__text;
             }

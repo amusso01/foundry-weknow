@@ -38,6 +38,11 @@
   &:first-of-type {
     border-top: 1px solid $color__light-grey;
   }
+  > button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .badger-accordion__trigger {
@@ -84,35 +89,48 @@
   font-size: 17px;
 }
 
-.badger-accordion__trigger-icon {
-  display: block;
-  height: 26px;
-  margin-left: auto;
-  position: relative;
-  transition: all ease-in-out 0.2s;
-  width: 16px;
+// REMOVED USED SVG ICON INSTEAD
 
-  &:after,
-  &:before {
-    background-color: $color__text;
-    content: "";
-    height: 3px;
-    position: absolute;
-    top: 0px;
-    transition: all ease-in-out ((0.2s / 3) * 2);
-    width: 16px;
-  }
+// .badger-accordion__trigger-icon {
+//   display: block;
+//   height: 26px;
+//   margin-left: auto;
+//   position: relative;
+//   transition: all ease-in-out 0.2s;
+//   width: 16px;
 
-  &:before {
-    left: 2px;
-    transform: rotate(45deg) translate3d(8px, 22px, 0);
-    transform-origin: 100%;
-  }
+//   &:after,
+//   &:before {
+//     background-color: $color__text;
+//     content: "";
+//     height: 3px;
+//     position: absolute;
+//     top: 0px;
+//     transition: all ease-in-out ((0.2s / 3) * 2);
+//     width: 16px;
+//   }
 
-  &:after {
-    transform: rotate(-45deg) translate3d(-8px, 22px, 0);
-    right: 3px;
-    transform-origin: 0;
+//   &:before {
+//     left: 2px;
+//     transform: rotate(45deg) translate3d(8px, 22px, 0);
+//     transform-origin: 100%;
+//   }
+
+//   &:after {
+//     transform: rotate(-45deg) translate3d(-8px, 22px, 0);
+//     right: 3px;
+//     transform-origin: 0;
+//   }
+// }
+.badger-accordion__icon {
+  > svg {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 1px;
+    path {
+      fill: $color__text;
+    }
   }
 }
 

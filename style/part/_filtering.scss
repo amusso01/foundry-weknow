@@ -1,4 +1,5 @@
-.shop__inner {
+.shop__inner,
+.agreement {
   label {
     margin-bottom: 10px;
     display: block;
@@ -62,6 +63,18 @@
             transform: rotate(45deg);
             animation: tick 0.1s 0.1s ease backwards;
           }
+        }
+      }
+    }
+  }
+}
+
+.agreement {
+  label {
+    input {
+      &:checked {
+        + span {
+          color: $color__grey;
         }
       }
     }
