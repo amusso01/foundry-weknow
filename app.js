@@ -29,6 +29,9 @@ docReady(function() {
   var hamburger = document.getElementById("hamburger-6");
   var htmlElement = document.querySelector("html");
   const body = document.querySelector("body");
+  const submenu = document.querySelectorAll(".has-submenu");
+  const subMenuSecondLevel = document.querySelectorAll(".second-levelIcon");
+  const submenuClose = document.querySelectorAll(".submenu-close-title");
 
   menuButton.addEventListener("click", function() {
     menu.classList.toggle("active");
@@ -40,6 +43,34 @@ docReady(function() {
     htmlElement.classList.toggle("noscroll");
   });
 
+  submenuClose.forEach(function(element) {
+    element.addEventListener("click", function(e) {
+      var close = this.closest(".submenu-secondLevel");
+      close.classList.remove("active");
+    });
+  });
+
+  submenu.forEach(function(element) {
+    element.addEventListener("click", function(e) {
+      e.stopImmediatePropagation();
+      if (e.target.classList.contains("sub-menu-item")) {
+        var innerSubMenu = this.querySelector(".submenu");
+        innerSubMenu.classList.toggle("submenu-active");
+        var span = e.target.lastChild;
+        var svgRemove = span.lastChild.firstElementChild.children;
+        svgRemove[0].classList.toggle("remove");
+      }
+    });
+  });
+
+  subMenuSecondLevel.forEach(function(element) {
+    element.addEventListener("click", function(e) {
+      e.stopImmediatePropagation();
+      var thisMenu = this.parentElement.nextElementSibling;
+      thisMenu.classList.add("active");
+    });
+  });
+
   body.addEventListener("mouseup", function(e) {
     if (!e.target.classList.contains("main-nav__control")) {
       menu.classList.remove("active");
@@ -49,6 +80,11 @@ docReady(function() {
   // ACCORDION
   var accordionPage = document.querySelector(".js-badger-accordion");
   var accordionProduct = document.querySelector(".js-accordion");
+
+  const footerAccordion = new BadgerAccordion(
+    ".js-badger-accordion-footer-mobile"
+  );
+
   if (typeof accordionPage != "undefined" && accordionPage != null) {
     const myAccordion = new BadgerAccordion(".js-badger-accordion");
     const myAccordionSecond = new BadgerAccordion(
@@ -201,15 +237,17 @@ docReady(function() {
   // CLEAR FILTER
   const clear = document.getElementById("clear-field");
   var fields = document.querySelectorAll(".shop__form > form label input");
-  clear.addEventListener("click", function(e) {
-    e.preventDefault();
+  if (typeof clear != "undefined" && clear != null) {
+    clear.addEventListener("click", function(e) {
+      e.preventDefault();
 
-    fields.forEach(element => {
-      if (element.checked === true) {
-        element.checked = false;
-      }
+      fields.forEach(element => {
+        if (element.checked === true) {
+          element.checked = false;
+        }
+      });
     });
-  });
+  }
 
   // CHOOSE VEHICLE
   const vehicleCards = document.querySelectorAll(".chooseVehicle-main__card");

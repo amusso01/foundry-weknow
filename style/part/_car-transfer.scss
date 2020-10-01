@@ -22,6 +22,9 @@
   }
   &__map {
     position: relative;
+    @include respond-below(md) {
+      display: none;
+    }
   }
   .map-info {
     position: absolute;
@@ -120,6 +123,12 @@
         border: none;
         width: 100%;
       }
+    }
+  }
+  &__image-mobile {
+    margin-top: 20px;
+    @include respond-above(md) {
+      display: none;
     }
   }
 }

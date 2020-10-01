@@ -35,6 +35,9 @@
   min-height: 430px;
   background-color: $color__light-grey;
   padding: 40px 0px;
+  @include respond-below(sm) {
+    min-height: auto;
+  }
 }
 .footer__inner {
   display: grid;
@@ -43,7 +46,35 @@
   margin: auto;
   margin-bottom: 70px;
   @include respond-below(sm) {
-    grid-template-columns: repeat(2, 1fr);
+    display: none;
+  }
+}
+.footer-mobile {
+  margin-bottom: 40px;
+  @include respond-above(sm) {
+    display: none;
+  }
+  .grey-line-footer {
+    height: 1px;
+    background-color: $color__grey;
+  }
+  .badger-accordion__panel-inner {
+    padding: 20px 15px;
+    > p {
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      > li {
+        margin-bottom: 10px;
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+        a {
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
 .footer__nav {
