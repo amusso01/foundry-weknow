@@ -284,4 +284,16 @@ docReady(function() {
       accountMenu.classList.toggle("open");
     });
   }
+
+  // Remove promocode
+
+  const closePromo = document.getElementById('closePromo');
+  const promoBox = document.getElementById('checkoutPromo');
+
+  if (typeof closePromo != "undefined" && closePromo != null) {
+    closePromo.addEventListener('click', function(){
+      promoBox.style.display = "none";
+    })
+  }
+
 });

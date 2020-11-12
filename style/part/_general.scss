@@ -244,6 +244,12 @@ h3,
   background-color: #2d95ef;
   color: #fff !important;
 }
+.btn-black {
+  background-color: #04141c;
+  &:hover {
+    background-color: #04141c;
+  }
+}
 
 // section
 .section {

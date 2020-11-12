@@ -316,12 +316,17 @@
           <div class="finalCheckout__promotions finalCheckout__promotions-cart">
             <p class="h4">Promotions & Rewards</p>
 
-            <div class="checkout-promotion">
-              <div class="checkout-radio">
+            <div id="checkoutPromo" class="checkout-promotion-code">
+              <div class="promocode">
                 <p>
-                  Enter promocode
+                  <span><i><svg xmlns="http://www.w3.org/2000/svg" width="19.332" height="19.332" viewBox="0 0 19.332 19.332"><path id="Icon_awesome-tag" data-name="Icon awesome-tag" d="M0,9.519V1.812A1.812,1.812,0,0,1,1.812,0H9.519A1.812,1.812,0,0,1,10.8.531l8,8a1.812,1.812,0,0,1,0,2.563L11.094,18.8a1.812,1.812,0,0,1-2.563,0l-8-8A1.812,1.812,0,0,1,0,9.519Zm4.229-7.1A1.812,1.812,0,1,0,6.041,4.229,1.812,1.812,0,0,0,4.229,2.417Z" fill="#575a5c"/></svg>
+                  </i></span>
+                  {{Promo}}
+                  <span class="remove-promo" id="closePromo"><svg xmlns="http://www.w3.org/2000/svg" width="28.284" height="28.284" viewBox="0 0 28.284 28.284"><g id="Group_3024" data-name="Group 3024" transform="translate(-1641.858 -637.858)"><circle id="Ellipse_12" data-name="Ellipse 12" cx="10" cy="10" r="10" transform="translate(1656 637.858) rotate(45)" fill="#575a5c"/><g id="Group_2195" data-name="Group 2195" transform="translate(1656 644.929) rotate(45)"><path id="Path_708" data-name="Path 708" d="M2089.99,632.285v-3.179a1.023,1.023,0,0,1,1.023-1.024h.086a1.024,1.024,0,0,1,1.024,1.024v3.179h3.027a1.024,1.024,0,0,1,1.024,1.024h0a1.024,1.024,0,0,1-1.024,1.024h-3.027v3.222a1.024,1.024,0,0,1-1.024,1.024h-.086a1.023,1.023,0,0,1-1.023-1.024v-3.222h-3.028a1.024,1.024,0,0,1-1.023-1.024h0a1.024,1.024,0,0,1,1.023-1.024Z" transform="translate(-2085.938 -628.083)" fill="#fff"/></g></g></svg>
+                  </span>
                 </p>
               </div>
+              <p class="discount">X% off</p>
             </div>
             <div class="promotion-checkout checkout-hide">
               <form action="#">
@@ -428,7 +433,7 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <h1 style="text-align: center; font-size: 34px;"><a href="./cart-promocode.html">NEXT</a></h1>
+      <h1 style="text-align: center; font-size: 34px;"><a href="./cart-invalid.html">NEXT</a></h1>
       <div class="footer__copy">
         <p>© We Know Group 2020 All Rights Reserved</p>
       </div>

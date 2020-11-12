@@ -312,6 +312,30 @@
 
           <div class="grey-line grey-line-margin"></div>
           <p class="tot-item">Item: 1 <span>{{ Total }}</span></p>
+
+          <div class="click-collect finalCheckout__promotions-cart">
+            <p class="h4">Click & Collect</p>
+            <p>You will need to collect some items in your order.</p>
+            <form action="#">
+              <div class="product-form-group">
+                <p class="h5">Collection Date</p>
+                <input type="date" class="form-control form-control-invalid" id="date" aria-describedby="date" placeholder="Select date of travel">
+                <p class="invalid-control">Collection date is required</p>
+              </div>
+              <div class="product-form-group">
+                <p class="h5">Collect from</p>
+                <select class="form-control-invalid form-control" name="cars" id="cars">
+                  <option value="">--Please choose an option--</option>
+                  <option value="ht2">Airport T2</option>
+                </select>            
+                <p class="invalid-control">Collection from is required</p>
+              </div>
+            </form>
+          </div>
+
+          <div class="grey-line"></div>
+
+
           
           <div class="finalCheckout__promotions finalCheckout__promotions-cart">
             <p class="h4">Promotions & Rewards</p>
@@ -400,6 +424,20 @@
             <p>Total to pay</p>
             <p>{{tot}}</p>
           </div>
+          <div class="error-global">
+            <div class="error-svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <path id="Icon_material-error-outline" data-name="Icon material-error-outline" d="M12,16h2v2H12Zm0-8h2v6H12Zm.99-5A10,10,0,1,0,23,13,10,10,0,0,0,12.99,3ZM13,21a8,8,0,1,1,8-8A8,8,0,0,1,13,21Z" transform="translate(-3 -3)" fill="#fff"/>
+              </svg>
+            </div>
+            <div class="error-text">
+              <p>Error!</p>
+              <p>There's some information missing:</p>
+              <ul>
+                <li>Collection date is required</li>
+              </ul>
+            </div>
+          </div>
           <div class="btn__wrapper">
             <a href="#" class="btn"
               >Continue to checkout</a
@@ -428,7 +466,7 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <h1 style="text-align: center; font-size: 34px;"><a href="./cart-promocode.html">NEXT</a></h1>
+      <h1 style="text-align: center; font-size: 34px;"><a href="./cart-payment.html">NEXT</a></h1>
       <div class="footer__copy">
         <p>© We Know Group 2020 All Rights Reserved</p>
       </div>
