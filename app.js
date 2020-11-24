@@ -102,6 +102,7 @@ docReady(function() {
   var terminal3 = document.getElementById("terminal3");
   var terminal4 = document.getElementById("terminal4");
   var terminal5 = document.getElementById("terminal5");
+  var details = document.getElementById("ride-details");
   if (typeof modalUpsell != "undefined" && modalUpsell != null) {
     const modal1 = new PureModal("upsellModal");
     modal1.init();
@@ -121,6 +122,10 @@ docReady(function() {
   if (typeof terminal5 != "undefined" && terminal5 != null) {
     const modal5 = new PureModal("terminal5");
     modal5.init();
+  }
+  if (typeof details != "undefined" && details != null) {
+    const modal6 = new PureModal("modal6");
+    modal6.init();
   }
 
   // SIGN IN
