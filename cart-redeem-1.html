@@ -281,8 +281,6 @@
                 <p class="details"><a id="ride-details" data-toggle="modal" data-target="modal6"  href="#">View details</a></p>
                 <p class="remove"><a href="#">Remove</a></p>
               </div>
-           
-          
             </div>
             <div class="cart__order-qty">
               <h4>QUANTITY</h4>
@@ -307,9 +305,7 @@
           </div>
           <a href="#">Continue shopping</a>
         </div>
-        
       </div>
-   
       <div class="grey-split">
         <div class="cart__summary">
           <h3>Order Summary</h3>
@@ -346,7 +342,7 @@
               </form>
             </div>
 
-            <div class="checkout-rewards">
+            <div class="checkout-rewards checkout-promotion-active">
               <div class="checkout-radio">
                 <p class="heathrow-reward-svg-container">
                   Heathrow Rewards
@@ -364,39 +360,71 @@
                 </p>
               </div>
             </div>
-            <div class="rewards-checkout checkout-hide">
+            <div class="rewards-checkout checkout-hide checkout-hide-open">
               <form action="#">
                 <div class="form-group">
-                  <label for="cardNumber">Heathrow Rewards</label>
-                  <span  class="btn-icon">
-                    <div class="icon icon-reward"></div>
-                  </span>
-                  <input
-                    type="text"
-                    class="form-control form-control-heathrow"
-                    id="rewards"
-                    aria-describedby="rewards"
-                    placeholder="Heathrow Rewards card number"
-                  />
-              
-                  <span  class="btn-icon">
-                    <div class="icon icon-pass"></div>
-                  </span>
-                  <input
-                    type="password"
-                    class="form-control form-control-heathrow"
-                    id="rewards-pass"
-                    aria-describedby="rewards"
-                    placeholder="Heathrow Rewards password"
-                  />
-              
+                  <div class="rewards-point-container">
+                    <div class="reward-card">
+                      <p>Your Reward points</p>
+                      <p class="point">3336</p>
+                    </div>
+                    <div class="reward-card">
+                      <p>Points Worth</p>
+                      <p class="point">£333.6</p>
+                    </div>
+                  </div>
+                  <label for="#">Redeem discount</label>
+                </div>
+                <div class="product-form-group multi-group multi-group-four">
+                  <div class="selectorGroup">
+                    <label class="radio">
+                      <input type="radio" name="points" value="">
+                      <span>£5</span>
+                    </label>
+                    
+                  </div>
+                  <div class="selectorGroup">
+                    <label class="radio">
+                      <input type="radio" name="points" value="">
+                      <span>£10</span>
+                    </label>
+                    
+                  </div>
+                  <div class="selectorGroup">
+                    <label class="radio">
+                      <input type="radio" name="points" value="">
+                      <span>£15</span>
+                    </label>
+                    
+                  </div>
+                  <div class="selectorGroup">
+                    <label class="radio">
+                      <input type="radio" name="points" value="">
+                      <span>£20</span>
+                    </label>
+                    
+                  </div>
+  
+               
                 </div>
                 <div class="btn__wrapper">
                   <a href="#" class="btn btn-heathrow"
-                    >Enter</a
+                    >Redeem Points</a
                   >
                 </div>
               </form>
+              <div class="grey-line-or">
+                <p><span class="grey"></span>Or<span class="grey"></span></p>
+              </div>
+              <div class="form-group">
+                <label >Collect points</label>
+              </div>
+              <div class="btn__wrapper">
+                <a href="#" class="btn btn-black"
+                  >Collect {{XX}}  Points</a
+                >
+              </div>
+
             </div>
           </div>
           <div class="grey-line"></div>
@@ -432,14 +460,13 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <h1 style="text-align: center; font-size: 34px;"><a href="./cart-promocode.html">NEXT</a></h1>
+      <h1 style="text-align: center; font-size: 34px;"><a href="./cart-reedemed.html">NEXT</a></h1>
       <div class="footer__copy">
         <p>© We Know Group 2020 All Rights Reserved</p>
       </div>
     </footer>
-
-    <!-- RIDE DETAILS MODAL -->
-    <div class="modal modal-details-cart" id="modal6" role="dialog" aria-labelledby="modal-6" aria-describedby="basic-modal" tabindex="-1" style="display: none;">
+     <!-- RIDE DETAILS MODAL -->
+     <div class="modal modal-details-cart" id="modal6" role="dialog" aria-labelledby="modal-6" aria-describedby="basic-modal" tabindex="-1" style="display: none;">
       <div class="modal-dialog">
         <div class="modal-header">
           <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">

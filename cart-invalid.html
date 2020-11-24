@@ -281,8 +281,6 @@
                 <p class="details"><a id="ride-details" data-toggle="modal" data-target="modal6"  href="#">View details</a></p>
                 <p class="remove"><a href="#">Remove</a></p>
               </div>
-           
-          
             </div>
             <div class="cart__order-qty">
               <h4>QUANTITY</h4>
@@ -307,9 +305,7 @@
           </div>
           <a href="#">Continue shopping</a>
         </div>
-        
       </div>
-   
       <div class="grey-split">
         <div class="cart__summary">
           <h3>Order Summary</h3>
@@ -333,10 +329,11 @@
                   <label for="cardNumber">Promocode</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control form-control-invalid"
                     id="promotion"
                     aria-describedby="promocode"
                   />
+                  <p class="invalid-control">This code is invalid</p>
                 </div>
                 <div class="btn__wrapper">
                   <a href="#" class="btn"
@@ -373,7 +370,7 @@
                   </span>
                   <input
                     type="text"
-                    class="form-control form-control-heathrow"
+                    class="form-control form-control-heathrow form-control-invalid"
                     id="rewards"
                     aria-describedby="rewards"
                     placeholder="Heathrow Rewards card number"
@@ -384,12 +381,13 @@
                   </span>
                   <input
                     type="password"
-                    class="form-control form-control-heathrow"
+                    class="form-control form-control-heathrow form-control-invalid"
                     id="rewards-pass"
                     aria-describedby="rewards"
                     placeholder="Heathrow Rewards password"
                   />
               
+                <p class="invalid-control">Invalid login details. Please try again.</p>
                 </div>
                 <div class="btn__wrapper">
                   <a href="#" class="btn btn-heathrow"
@@ -432,14 +430,13 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <h1 style="text-align: center; font-size: 34px;"><a href="./cart-promocode.html">NEXT</a></h1>
+      <h1 style="text-align: center; font-size: 34px;"><a href="./cart-redeem-1.html">NEXT</a></h1>
       <div class="footer__copy">
         <p>© We Know Group 2020 All Rights Reserved</p>
       </div>
     </footer>
-
-    <!-- RIDE DETAILS MODAL -->
-    <div class="modal modal-details-cart" id="modal6" role="dialog" aria-labelledby="modal-6" aria-describedby="basic-modal" tabindex="-1" style="display: none;">
+     <!-- RIDE DETAILS MODAL -->
+     <div class="modal modal-details-cart" id="modal6" role="dialog" aria-labelledby="modal-6" aria-describedby="basic-modal" tabindex="-1" style="display: none;">
       <div class="modal-dialog">
         <div class="modal-header">
           <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
